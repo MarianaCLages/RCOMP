@@ -1,4 +1,4 @@
-RCOMP 2018-2019 Project - Sprint 3 planning
+RCOMP 2019-2020 Project - Sprint 3 planning
 ===========================================
 ### Sprint master: 3333333 ###
 (This file is to be created/edited by the sprint master only)
@@ -20,8 +20,6 @@ In this section, all technical decisions taken in the planning meeting should be
 
 #### Example: ####
   * 1111111 - Structured cable design for building A, floors 2 and 3
-  * 2222222 - Structured cable design for building B, floors 0 and 1
-  * 3333333 - VLAN devices configuration for building C
   * 4444444 - IPv4 addressing and routing configurations for building D
   * 5555555 - Network access policies enforcement for building X
   * 6666666 - Network application Z development

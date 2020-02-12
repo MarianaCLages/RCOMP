@@ -1,4 +1,4 @@
-RCOMP 2018-2019 Project - Sprint 3 - Member 3333333 folder
+RCOMP 2019-2020 Project - Sprint 3 - Member 3333333 folder
 ===========================================
 (This folder is to be created/edited by the team member 3333333 only)
 

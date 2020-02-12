@@ -1,4 +1,4 @@
-RCOMP 2018-2019 Project - Sprint 3 review
+RCOMP 2019-2020 Project - Sprint 3 review
 =========================================
 ### Sprint master: 3333333 ###
 (This file is to be created/edited by the sprint master only)
@@ -32,9 +32,4 @@ The VTP configuration is not present in switch DD.
 The IPv4 network TTT has not been implemented.
 The routing table at router FF has the wrong mask for network YYY.
 Nodes on network CCC are not receiving the default-gateway by DHCP.
-## 2.5. 5555555 - Network access policies enforcement for building X #
-### Totally implemented with issues. ###
-External spoofing in not being prevented.
-## 2.6. 6666666 - Network application Z development #
-### Totally implemented with issues. ###
-The TTTT feature is not working as it should.
+

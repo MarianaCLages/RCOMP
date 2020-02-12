@@ -1,4 +1,4 @@
-RCOMP 2018-2019 Project - Sprint 2 planning
+RCOMP 2019-2020 Project - Sprint 2 planning
 ===========================================
 ### Sprint master: 2222222 ###
 (This file is to be created/edited by the sprint master only)
@@ -23,5 +23,4 @@ In this section, all technical decisions taken in the planning meeting should be
   * 2222222 - Structured cable design for building B, floors 0 and 1
   * 3333333 - VLAN devices configuration for building C
   * 4444444 - IPv4 addressing and routing configurations for building D
-  * 5555555 - Network access policies enforcement for building X
-  * 6666666 - Network application Z development
+
