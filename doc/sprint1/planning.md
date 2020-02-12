@@ -23,5 +23,3 @@ In this section, all technical decisions taken in the planning meeting should be
   * 2222222 - Structured cable design for building B, floors 0 and 1
   * 3333333 - VLAN devices configuration for building C
   * 4444444 - IPv4 addressing and routing configurations for building D
-  * 5555555 - Network access policies enforcement for building X
-  * 6666666 - Network application Z development
