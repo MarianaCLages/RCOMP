@@ -1,4 +1,4 @@
-RCOMP 2019-2020 Project - Sprint 1 review
+RCOMP 2021-2022 Project - Sprint 1 review
 =========================================
 ### Sprint master: 1111111 ###
 (This file is to be created/edited by the sprint master only)
