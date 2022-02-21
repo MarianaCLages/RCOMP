@@ -1,4 +1,4 @@
-RCOMP 2020-2021 Project repository template
+RCOMP 2021-2022 Project repository template
 ===========================================
 # 1. Team members (update this information please) #
   * 1111111 - {First and last name} 
