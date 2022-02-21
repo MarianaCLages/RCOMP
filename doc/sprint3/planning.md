@@ -1,4 +1,4 @@
-RCOMP 2019-2020 Project - Sprint 3 planning
+RCOMP 2021-2022 Project - Sprint 3 planning
 ===========================================
 ### Sprint master: 3333333 ###
 (This file is to be created/edited by the sprint master only)

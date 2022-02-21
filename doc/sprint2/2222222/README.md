@@ -1,4 +1,4 @@
-RCOMP 2019-2020 Project - Sprint 2 - Member 2222222 folder
+RCOMP 2021-2022 Project - Sprint 2 - Member 2222222 folder
 ===========================================
 (This folder is to be created/edited by the team member 2222222 only)
 
