@@ -1,4 +1,4 @@
-RCOMP 2019-2020 Project - Sprint 1 planning
+RCOMP 2021-2022 Project - Sprint 1 planning
 ===========================================
 ### Sprint master: 1111111 ###
 (This file is to be created/edited by the sprint master only)
@@ -13,7 +13,7 @@ In this section, all technical decisions taken in the planning meeting should be
   * VTP domains
   * WiFi channels
   * IPv4 networks' addresses and routers' addresses
-  * Routing protocols
+  * Routing protocols, AS identifiers and area identifiers
   * Application protocols outlining (further coordination may be required between members)
 # 3. Subtasks assignment #
 (For each team member (sprint master included), the description of the assigned subtask in sprint 1)
