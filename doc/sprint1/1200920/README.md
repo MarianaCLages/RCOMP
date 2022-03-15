@@ -25,38 +25,38 @@ De modo a prevenir eventuais falhas de cabos será adotada redundancia de cabos 
 # Edifício 1 #
 A estrutura do Edifício 1 (envolvendo os seus dois andares 1.0 e 1.1) está presente nas seguintes figura, contendo também as respetivas medidas das salas:
 
-![edA0_medidas](/doc/sprint1/1181056/Figuras_aux/edA0_medidas.png)
+![nome](/link.png)
 
 **Legenda: medidas do andar 1.0, edifício 1.**
 
-![edA1_medidas](/doc/sprint1/1181056/Figuras_aux/edA1_medidas.png)
+![nome](/link.png)
 
 **Legenda: medidas do andar 1.1, edifício 1.**
 
 
 ### Áreas ###
-**Andar A0:**
+**Andar 0:**
 
 
-**Andar A1:**
+**Andar 1:**
 
 
-![edA0_Final_total](/doc/sprint1/1181056/Figuras_aux/edA0_Final_total.png)
+![nome](/link.png)
 
-**Legenda: estrutura/plano de cabelagem e equipamento do andar A0 com raio de alcance do access-point do WI-FI wireless, edifício A.**
+**Legenda: estrutura/plano de cabelagem e equipamento do andar 1 com raio de alcance do access-point do WI-FI wireless, edifício A.**
 
-![edA0_Final_aproximado](/doc/sprint1/1181056/Figuras_aux/edA0_Final_aproximado.png)
+![nome](/link.png)
 
-**Legenda: estrutura/plano de cabelagem e equipamento do andar A0 aproximado, edifício A.**
+**Legenda: estrutura/plano de cabelagem e equipamento do andar 0 aproximado, edifício 1.**
 
-![Legenda_edifícios](/doc/sprint1/1181056/Figuras_aux/
+![nome](/link.png/)
 
 
 ## Tipo de cabos utilizados e os caminhos por eles percorridos
 
 
 ## Metros de cabo necessários:
-### Andar A0 ###
+### Andar 1 ###
 **CP para tomadas:** x metros.
 
 **CP para access-point de WI-FI wireless:** 
@@ -79,12 +79,12 @@ A estrutura do Edifício 1 (envolvendo os seus dois andares 1.0 e 1.1) está pre
 
 
 
-![caixa_MC_IC_HC](/doc/sprint1/1181056/Figuras_aux/caixa_MC_IC_HC.png)
+![nome](/link.png)
 
-**Legenda: visualização da caixa de equipamento presente no andar A1, na sala reservada como datacenter, edifício A.**
+**Legenda: visualização da caixa de equipamento presente no andar 1, na sala reservada como datacenter, edifício 1.**
 
 ## Inventário
-### Andar A0 ###
+### Andar 1 ###
 **Total de tomadas:** 49.
 
 **Routers/access-point:** 
@@ -95,7 +95,7 @@ A estrutura do Edifício 1 (envolvendo os seus dois andares 1.0 e 1.1) está pre
 
 **3 Telecomunication Enclousers:** 
 
-### Andar A1 ###
+### Andar 1 ###
 **Total de tomadas:** 
 
 **Routers/access-point:** 
