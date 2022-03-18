@@ -1,0 +1,61 @@
+RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
+=========================================
+
+### Durante a realização do **Sprint 1** do trabalho de **RCOMP** foram desenvolvidos estes possíveis sketches que ilustram uma possível solução de cabelagem (e respetivos equipamentos eletrónicos) que cobriam por completo o **edifício 4**. Esta solução foi discutida em grupo para um melhor entendimento entre o mesmo. Segue se, assim, os sketches referidos e asseguir uma breve explicação dos mesmos.
+
+#
+ 
+
+#  ***Floor 0***
+![Floor0_Building4](Floor0_Building4.png)
+
+#
+
+## *Notas:*
+* **Nota 1**: Os cabos representados perto e paralelos à parede (ou dentro da parede) representam cabos na parede cobertos por calhas, assim como as tomadas junto à parede significam que elas estão colocadas na mesma. 
+
+* **Nota 2:** Como é possível observar no sketch, para alcançar as tomadas que se encontram no meio da sala é utilizado calha para cobrir os mesmoo (tanto para o mutoa como para tomadas).
+
+#
+
+## *Informações:* 
+
+| Sala  | Área | Outlets | CP                                                                                   |
+| :-------------    | :--------------------- | :------------ | :----------------------------                                                                            |
+| 4.0.1 WS    |53,44 m^2 | 10 Outlets | 1 |
+| 4.0.2 WS    |30,81 m^2 | 8 Outlets  | 1 |
+| 4.0.3 WS    |30,81 m^2 | 10 Outlets | 1 |
+| 4.0.4 WS    |58,44 m^2 | 11 Outlets | 1 |
+| 4.0.5 TR    |7,74  m^2 | 11 Outlets | 1 |
+| 4.0.6 WS    |14,63 m^2 | 3  Outlets | 1 |
+| 4.0.7 WS    |13,81 m^2 | 3  Outlets | 1 |
+
+### *Inventário do piso*
+
+
+
+* Existe, também, 1 HC na sala 4.0.4, que é conectado com o IC através de 1 cabo de fibra multivalor;
+
+* Para além disso, foi usado 1 **MUTOA** neste andar, precisamente, na sala 4.0.4, uma vez que existe **uma área ampla no meio da sala** e o mesmo permite uma distribuição mais organizado no mesmo (permitindo assim bastantes utilizadores que se encontram no meio da sala tenham um outlet perto de si);
+
+* Achei pretinente utilizar cabos **CAT7** entre o **HC** e os **AP** representados no sketch, pois o mesmo permite **alto nível de tráfego de dados**;
+
+* Devido às paredes de betão armado que existem no piso, temos de ter em consideração o fator que o raio de alcance de cada **AP** é reduzido por volta de 10 metros, o que vai fazer com que seja necessário **2 APs** no mesmo piso para que fique completamente coberto por wireless;
+
+* Para alcançar tanto os **outlets** como o **MUTOA** que se encontram no meio da sala, é utilizado calha para esconder e organizar os cabos, sendo esta colada ao chão (e caso fosse necessário poderia existir tomadas elétricas na mesma);
+
+* Os **APs** deste andar foram distribuídos do modo que ficassem
+
+
+#  ***Floor 1***
+
+![Floor0_Building4](Floor1_Building4.png)
+
+#
+# Inventário do Edifício 4
+
+  
+
+| Interaction ID  | Question: Which class is responsible for...| Answer | Justification       (withpatterns)                                                                            |
+| :-------------  | :---------------------| :------------| :----------------------------                                                                            |
+| **Step/MSG 1**: asks to generate the NHS Report |	... interacting with the actor? | GenerateNHSReportUI | **PureFabrication**: There is no reason to assign this responsibility to any existing class in the Domain model |
