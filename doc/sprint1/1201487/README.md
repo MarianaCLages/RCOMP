@@ -1,7 +1,9 @@
 RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
 =========================================
 
-### <p> Durante a realização do **Sprint 1** do trabalho de **RCOMP** foram desenvolvidos estes possíveis sketches, e devidas explicações, que ilustram uma possível solução de cabelagem (e respetivos equipamentos eletrónicos) que cobriam por completo o **edifício 4**. Esta solução foi discutida em grupo para um melhor entendimento entre o mesmo. Segue se, assim, os sketches referidos e a seguir uma breve explicação dos mesmos. </p>
+### <p> Durante a realização do **Sprint 1** do trabalho de **RCOMP** foram desenvolvidos estes possíveis sketches, e devidas explicações, que ilustram uma possível solução de cabelagem (e respetivos equipamentos eletrónicos) que cobriam por completo o **edifício 4**. Esta solução foi discutida em grupo para um melhor entendimento entre o mesmo.</p>
+
+### Este edifício apresenta no total 14 salas, 7 salas no piso 0 e 7 salas no piso 1. Em cada piso apresenta 2 WC onde não vai ser necessário outlets, tal como especificado no enunciado do projeto. O edifício tem 20 metros de comprimento e 20 metros de largura, dando assim no total uma área de 400 metros quadrados. Segue se, assim, os sketches referidos e a seguir uma breve explicação dos mesmos.
 
 #  ***Floor 0***
 #
@@ -185,7 +187,7 @@ TR - Telecomunication Room
 * **Nota 3:** Para uma melhor compreensão do alcance de cada **AP** é ilustrado no sketch.
 
 
-* **Nota 4:** É mencionado no enunciado do projeto que existe **teto falso em todo este piso**, que vai facilitar a **cabelagem** neste andar e a **estruturação da mesma**. 
+* **Nota 4:** É mencionado no enunciado do projeto que existe **teto falso em todo este piso**, colocado a 2,5 metros do chão, que vai facilitar a **cabelagem** neste andar e a **estruturação da mesma**. 
 #
 
 ## *Informações:*
@@ -357,4 +359,7 @@ Also, an up to 50% oversizing is wise to accommodate future upgrades."**
   
 
 
-* Para além dos *.png* disponibilizados dos sketches do piso 0 e do piso 1, também foi disponibilizado o *.svg*, mas o mesmo encontra-se com problemas de formatação quando foi exportado, por isso optamos por utilizar os *.png* na apresentação do ficheiro markdown.
+* Para além dos *.png* disponibilizados dos sketches do piso 0 e do piso 1, também foi disponibilizado o *.svg*, mas o mesmo encontra-se com problemas de formatação quando foi exportado, por isso optei por utilizar os *.png* na apresentação do ficheiro markdown.
+
+
+* Também está disponibilizado sketches com as medições tanto do piso 0 como o piso 1, uma vez que no sketch total algumas medições estava um bocado tapado devido aos cabos que por lá passavam.
