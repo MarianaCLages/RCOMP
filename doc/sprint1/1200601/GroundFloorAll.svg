@@ -792,7 +792,7 @@
 			<path fill="none" d="M 0.00 0.00 L 19.30 0.00 ">
 			</path>
 		</g>
-		<g transform="translate(1479.68,37.04) scale(1,1) rotate(180.00,65.82,0.00) " fill="rgb(160,65,13)" fill-opacity="1.0" stroke="rgb(160,65,13)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+		<g transform="translate(1479.68,37.04) scale(1,1) rotate(180.00,65.82,0.00) " fill="rgb(160,65,13)" fill-opacity="1.0" stroke="rgb(201,235,255)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
 			<path fill="none" d="M 0.00 0.00 L 131.63 0.00 ">
@@ -1132,12 +1132,6 @@
 			<path fill="none" d="M 0.00 0.00 L 11.24 0.00 ">
 			</path>
 		</g>
-		<g transform="translate(1103.02,854.37) scale(1,1) rotate(-76.71,8.39,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,126,214)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
-			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
-			</path>
-			<path fill="none" d="M 0.00 0.00 L 16.79 0.00 ">
-			</path>
-		</g>
 		<g transform="translate(1614.69,627.72) scale(1,1) rotate(162.03,25.73,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,126,214)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
@@ -1156,6 +1150,40 @@
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
 			<path fill="none" d="M 0.00 0.00 L 17.01 0.00 ">
+			</path>
+		</g>
+		<g transform="translate(1677.99,27.12) scale(1,1) rotate(0.00,25.93,11.24) " fill="none" fill-opacity="1.0" stroke="none" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+			<g transform="translate(0.00,0.00) scale(1,1) rotate(0.00,25.93,11.24) ">
+				<rect x="8" y="-2" width="34" height="29" fill="rgb(255,255,255)" stroke="none" opacity="0.0">
+				</rect>
+				<text stroke-width="0">
+					<tspan font-size="24" font-family="Calibri" font-weight="100" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" opacity="1.0" x="8.79 29.90 " y="16.07 16.07 ">
+						MC</tspan>
+				</text>
+			</g>
+		</g>
+		<g transform="translate(1691.68,62.18) scale(1,1) rotate(-91.51,12.57,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(201,235,255)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
+			</path>
+			<path fill="none" d="M 0.00 0.00 L 25.14 0.00 ">
+			</path>
+		</g>
+		<g transform="translate(1705.23,63.17) scale(1,1) rotate(91.74,10.92,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(201,235,255)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
+			</path>
+			<path fill="none" d="M 0.00 0.00 L 21.84 0.00 ">
+			</path>
+		</g>
+		<g transform="translate(1134.73,847.00) scale(1,1) rotate(-90.00,15.54,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,126,214)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
+			</path>
+			<path fill="none" d="M 0.00 0.00 L 31.09 0.00 ">
+			</path>
+		</g>
+		<g transform="translate(1136.39,833.44) scale(1,1) rotate(180.00,6.95,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,126,214)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
+			</path>
+			<path fill="none" d="M 0.00 0.00 L 13.89 0.00 ">
 			</path>
 		</g>
 	</svg>
