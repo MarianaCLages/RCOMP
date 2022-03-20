@@ -20,22 +20,22 @@ A estrutura de cablagem preposta para o exterior está representada na figura ab
 
 Como as distâncias entre os diferentes edifícios são consideravelmente elevadas e queremos tirar partido máximo da velocidade de ligação á rede providenciada pelo ISP (Internet Service Provider), serão adotados cabos do tipo fibra ótica (especificados abaixo) entre o MC, que se encontra no edifício 1, e os IC´s dos edifícios. Dentro dos edifícios, devido à baixa distancia entre dispositivos será usado cabo de cobre CAT7.
 
-Utilizei Cabos de **fibra ótica multivalor** entre os edifícios, uma vez que o comprimento dos cabos não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria melhor caso os cabos que estariam a ser utilizados tivessem mais que 1KM, e uma vez que, os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas** até porque o **HC** é o fim do **Backbone**, ou seja é ele que fica responsável pelo piso.
+Utilizei Cabos de **fibra ótica multimodo** entre os edifícios, uma vez que o comprimento dos cabos não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria melhor caso os cabos que estariam a ser utilizados tivessem mais que 1KM, e uma vez que, os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas** até porque o **HC** é o fim do **Backbone**, ou seja é ele que fica responsável pelo piso.
 De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos entre MC e IC.
 
 # Edifício 1
-
-## **_Floor 0_**
-
-![Floor0_Building1](/doc\sprint1\1200920\1.0.png)
-
-#
 
 ### _Notas:_
 
 - **Nota 1**: Os cabos representados perto e paralelos à parede (ou dentro da parede) representam cabos na parede cobertos por calhas, assim como as tomadas junto à parede significam que elas estão colocadas na mesma.
 
 - **Nota 2:** Como é possível observar no sketch, para alcançar as tomadas que se encontram no meio da sala é utilizado calha para cobrir os mesmo (tanto para o mutoa como para tomadas).
+
+- **Nota 3:** Como é possível observar no sketch, optei por usar uma só linha para representar todos os cabos que se encontram paralelos uma vez que a imagem iria ficar sobrecarregada com muitas linhas umas ao lado das outras.
+
+## **_Floor 0_**
+
+![Floor0_Building1](/doc\sprint1\1200920\1.0.png)
 
 #
 
@@ -62,9 +62,9 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 - 1 Switch de 42 portas
 - 3 Switch de 16 portas
 - 1 Switch de 12 portas
-- 1 patch panel de 42 portas
-- 3 patch panel de 16 portas
-- 1 patch panel de 12 portas
+- 1 Patch panel de 42 portas
+- 3 Patch panel de 16 portas
+- 1 Patch panel de 12 portas
 - 1 AP
 - 1 Power Injectors
 - 60 Outlets
@@ -72,7 +72,10 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 - 1 MC
 - 1 IC
 - 4 19'' Telecommunications Enclosures
-- 1 grande (??) Telecommunications Enclosures
+- 1 21'' Telecommunications Enclosures
+- 1 Fiber patch panel de 8 portas
+- 1 Fiber switch de 8 portas
+- 1 Router
 
 ### Observações de Implementação
 
@@ -83,8 +86,6 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 - Entre os **HC** e os **CP** e os **AP** e os **MUTOA** será usado cabo **CAT7**, pois o mesmo permite **alto nível de tráfego de dados**.
 
 - Para alimentação dos **AP** o cabo **CAT7** irá utilizar a tecnologia **POE** para alimentar de energia elétrica os equipamentos. Irão ser utilizados **Power Injectors** para permitir ao cabo transportar energia elétrica. Estes dispositivos irão ser colocados na saida do **HC** para assim alimentar a ligação.
-
-- Devido às paredes de betão armado que existem no piso, temos de ter em consideração o fator que o raio de alcance de cada **AP** é reduzido por volta de 10 metros, o que vai fazer com que seja necessário **1 APs** no mesmo piso para que fique completamente coberto por wireless.
 
 - O cabo irá ser correr entre as diversas salas e os diversos dispositivos através da calha subterrânea já implementada no edifício.
 
@@ -113,9 +114,9 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 | 1.1.13 | 14.5 m^2  | 2 Outlets  | 1 (Switch e patch panel de 8 portas)  |
 | 1.1.14 | 40.47 m^2 | 8 Outlets  | 1 (Switch e patch panel de 12 portas) |
 
-### Inventário do Piso 0
+### Inventário do Piso 1
 
-- 10 metros de cabo fibra multi-modo
+- 20 metros de cabo fibra multi-modo
 - 290 metros de cabo cat7
 - 861.4 metros de cabo cat6
 - 1 Switch de 24 portas
@@ -132,8 +133,8 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 - 1 MUTOA
 - 1 HC
 - 6 19'' Telecommunications Enclosures
-- 1 fiber patch panel de 8 portas
-- 1 fiber switch de 8 portas
+- 1 Fiber patch panel de 8 portas
+- 1 Fiber switch de 8 portas
 
 ### Observações de Implementação
 

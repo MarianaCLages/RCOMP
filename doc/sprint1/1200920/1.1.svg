@@ -127,7 +127,7 @@
 			</image>
 		</pattern>
 		<pattern id="CDTextureCustom795" width="19" height="0" patternUnits="userSpaceOnUse">
-			<image preserveAspectRatio="none" x="0" y="0" width="19" height="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAALCAYAAABVuVzsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAQSURBVBhXY/gPBbRi/P8PAPRPV6kvYZP3AAAAAElFTkSuQmCC">
+			<image preserveAspectRatio="none" x="0" y="0" width="19" height="0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAALCAYAAABYpyyrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAAQSURBVBhXY/iPBoaKwP//AAwzr1GNZgosAAAAAElFTkSuQmCC">
 			</image>
 		</pattern>
 		<pattern id="CDTextureCustom796" width="20" height="0" patternUnits="userSpaceOnUse">
@@ -666,13 +666,13 @@
 				</text>
 			</g>
 		</g>
-		<g transform="translate(1276.04,2795.14) scale(1,1) rotate(0.12,28.46,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,140,77)" stroke-width="11" stroke-linecap="round" stroke-opacity="1.0">
+		<g transform="translate(1264.92,2796.65) scale(1,1) rotate(0.00,25.30,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,140,77)" stroke-width="11" stroke-linecap="round" stroke-opacity="1.0">
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
-			<path fill="none" d="M 0.00 0.00 L 56.93 0.00 ">
+			<path fill="none" d="M 0.00 0.00 L 50.60 0.00 ">
 			</path>
 		</g>
-		<g transform="translate(1332.96,2783.46) scale(1,1) rotate(0.00,71.44,11.74) " fill="none" fill-opacity="1.0" stroke="none" stroke-width="11" stroke-linecap="round" stroke-opacity="1.0">
+		<g transform="translate(1323.86,2781.76) scale(1,1) rotate(0.00,71.44,11.74) " fill="none" fill-opacity="1.0" stroke="none" stroke-width="11" stroke-linecap="round" stroke-opacity="1.0">
 			<g transform="translate(0.00,0.00) scale(1,1) rotate(0.00,71.44,11.74) ">
 				<rect x="6" y="-7" width="130" height="38" fill="rgb(255,255,255)" stroke="none" opacity="0.0">
 				</rect>
@@ -682,19 +682,19 @@
 				</text>
 			</g>
 		</g>
-		<g transform="translate(1492.78,2789.24) scale(1,1) rotate(180.00,10.85,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,0,0)" stroke-width="11" stroke-linecap="round" stroke-opacity="1.0">
+		<g transform="translate(1478.49,2790.30) scale(1,1) rotate(180.00,11.38,0.00) " fill="none" fill-opacity="1.0" stroke="rgb(0,0,0)" stroke-width="11" stroke-linecap="round" stroke-opacity="1.0">
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
-			<path fill="none" d="M 0.00 0.00 L 21.70 0.00 ">
+			<path fill="none" d="M 0.00 0.00 L 22.75 0.00 ">
 			</path>
 		</g>
-		<g transform="translate(1505.12,2761.72) scale(1,1) rotate(0.00,154.40,25.93) " fill="none" fill-opacity="1.0" stroke="none" stroke-width="11" stroke-linecap="round" stroke-opacity="1.0">
-			<g transform="translate(0.00,0.00) scale(1,1) rotate(0.00,154.40,25.93) ">
-				<rect x="16" y="6" width="276" height="38" fill="rgb(255,255,255)" stroke="none" opacity="0.0">
+		<g transform="translate(1505.44,2765.21) scale(1,1) rotate(0.00,149.05,25.03) " fill="none" fill-opacity="1.0" stroke="none" stroke-width="11" stroke-linecap="round" stroke-opacity="1.0">
+			<g transform="translate(0.00,0.00) scale(1,1) rotate(0.00,149.05,25.03) ">
+				<rect x="6" y="6" width="286" height="38" fill="rgb(255,255,255)" stroke="none" opacity="0.0">
 				</rect>
 				<text stroke-width="0">
-					<tspan font-size="31" font-family="Calibri" font-weight="100" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" opacity="1.0" x="16.32 30.91 38.19 54.87 65.94 88.33 105.07 115.71 122.99 136.42 158.81 185.95 202.63 209.92 220.55 227.84 242.18 257.39 264.68 281.42 " y="34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 34.24 ">
-						FibraoticaMultivalor</tspan>
+					<tspan font-size="31" font-family="Calibri" font-weight="100" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" opacity="1.0" x="5.52 20.11 27.40 44.08 55.15 77.53 94.27 104.91 112.20 125.62 148.01 175.15 191.83 199.12 209.76 217.04 242.41 259.15 275.83 " y="33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 33.34 ">
+						FibraoticaMultimodo</tspan>
 				</text>
 			</g>
 		</g>
@@ -970,7 +970,7 @@
 			<path fill="none" d="M 0.00 0.00 L 325.44 0.00 L 325.44 19.05 ">
 			</path>
 		</g>
-		<g transform="translate(480.81,778.85) scale(1,1) rotate(0.00,524.63,0.00) " fill="url(#CDTextureCustom750)" fill-opacity="1.0" stroke="rgb(242,255,151)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+		<g transform="translate(480.81,778.85) scale(1,1) rotate(-0.00,524.63,0.00) " fill="url(#CDTextureCustom750)" fill-opacity="1.0" stroke="rgb(242,255,151)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
 			<path fill="none" d="M 0.00 0.00 L 1049.25 0.00 ">
@@ -1018,13 +1018,13 @@
 			<path fill="none" d="M 0.00 0.00 L 23.81 0.00 L 23.81 0.00 ">
 			</path>
 		</g>
-		<g transform="translate(480.75,612.29) scale(1,1) rotate(0.00,6.66,0.00) " fill="url(#CDTextureCustom766)" fill-opacity="1.0" stroke="rgb(0,140,77)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+		<g transform="translate(480.75,612.29) scale(1,1) rotate(-0.00,6.66,0.00) " fill="url(#CDTextureCustom766)" fill-opacity="1.0" stroke="rgb(0,140,77)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
 			<path fill="none" d="M 0.00 0.00 L 13.33 0.00 ">
 			</path>
 		</g>
-		<g transform="translate(482.07,450.34) scale(1,1) rotate(-0.00,6.25,0.00) " fill="url(#CDTextureCustom767)" fill-opacity="1.0" stroke="rgb(0,140,77)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+		<g transform="translate(482.07,450.34) scale(1,1) rotate(0.00,6.25,0.00) " fill="url(#CDTextureCustom767)" fill-opacity="1.0" stroke="rgb(0,140,77)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
 			<path fill="none" d="M 0.00 0.00 L 12.50 0.00 ">
@@ -1134,7 +1134,7 @@
 			<path fill="none" d="M 266.44 0.00 L 266.96 559.46 L 33.60 559.99 L 0.26 560.26 L 0.00 538.03 ">
 			</path>
 		</g>
-		<g transform="translate(1653.60,714.65) scale(1,1) rotate(86.96,9.77,0.00) " fill="url(#CDTextureCustom795)" fill-opacity="1.0" stroke="rgb(0,140,77)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
+		<g transform="translate(1653.60,714.65) scale(1,1) rotate(99.13,9.77,0.00) " fill="url(#CDTextureCustom795)" fill-opacity="1.0" stroke="rgb(0,140,77)" stroke-width="2" stroke-linecap="round" stroke-opacity="1.0">
 			<path fill-rule="evenodd" marker-start="none" marker-end="none" d="">
 			</path>
 			<path fill="none" d="M 0.00 0.00 L 19.54 0.00 ">
