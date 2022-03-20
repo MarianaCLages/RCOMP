@@ -59,7 +59,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
             7 Patch Cords (3 CPs + 2 APs + 2 MUTOAs)
 
         1 Router
-        TE (Telecommunication Enclosure) - XXX dimensão
+        TE (Telecommunication Enclosure) - 21'' cabinet
 
 * **Sala 2.0.2 WS**
 
@@ -68,7 +68,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
             1 Patch Panel 12 portas de cobre - CAT6
             8 Patch Cords (8 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 2.0.3 WS**
 
@@ -78,7 +78,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
             18 Patch Cords (18 outlets)
 
         2 MUTOAs
-        TE (Telecommunication Enclosure) - XXX dimensão
+        TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 2.0.5 WS**
 
@@ -87,7 +87,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
             1 Patch Panel 24 portas de cobre - CAT6
             18 Patch Cords (18 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * 44 **outlets**
 * 2 Access-points (**AP**)
@@ -96,7 +96,9 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 * 110,4 metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
 * 2 **MUTOAs**
-* 4 **TEs**
+* 3 **TEs 19''** racket
+* 1 **TE 21''** cabinet
+* 1 Router
 
 
 ### *Observações e Implementações*
@@ -211,7 +213,7 @@ TR - Telecommunication Room
             1 Patch Panel 12 portas de cobre - CAT7
             7 Patch Cords (5 CPs + 2 APs)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 2.1.2 WS**
 
@@ -220,7 +222,7 @@ TR - Telecommunication Room
             1 Patch Panel 12 portas de cobre - CAT6
             8 Patch Cords (8 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 2.1.5 WS**
 
@@ -229,7 +231,7 @@ TR - Telecommunication Room
             1 Patch Panel 24 portas de cobre - CAT6
             12 Patch Cords (12 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 2.1.7 WS**
 
@@ -238,7 +240,7 @@ TR - Telecommunication Room
             1 Patch Panel 24 portas de cobre - CAT6
             12 Patch Cords (12 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 
 * **Sala 2.1.9 WS**
@@ -248,7 +250,7 @@ TR - Telecommunication Room
             1 Patch Panel 12 portas de cobre - CAT6
             8 Patch Cords (8 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 
 * **Sala 2.1.12 WS**
@@ -258,7 +260,7 @@ TR - Telecommunication Room
             1 Patch Panel 12 portas de cobre - CAT6
             8 Patch Cords (8 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * 48 **outlets**
 * 2 Access-points (**AP**)
@@ -266,7 +268,7 @@ TR - Telecommunication Room
 * 214,1 metros de cabo de cobre **CAT6**
 * 156 metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
-* 6 **TEs**
+* 6 **TEs 19''** racket
 
 
 ### *Observações e Implementações*

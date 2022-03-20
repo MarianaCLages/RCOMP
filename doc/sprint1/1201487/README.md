@@ -36,8 +36,8 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
 
 **Nota:** A sala 4.0.5 é, tal como mencionado no enunciado do projeto, uma storage area e, por isso, não necessita de nenhum outlet.
 
-- WS - Work Station
-- TR - Telecommunication Room
+- **WS** - Work Station
+- **TR** - Telecommunication Room
 
 
 ### *Inventário do piso*
@@ -50,7 +50,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
             6 Patch Cords (6 outlets)
 
          1 MUTOA
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 4.0.2 WS**
 
@@ -59,18 +59,18 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
             1 Patch Panel 24 portas de cobre - CAT6
             16 Patch Cords (16 outlets)
   
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 4.0.4 WS**
 
         1 MC (Main Cross Connect):
-            1 switch 12 portas
-            1 Patch Panel 12 portas de fibra ótica - Multivalor
+            1 Switch 12 portas de fibra
+            1 Patch Panel 12 portas de fibra ótica - multimodo
             2 Patch Cords (1 IC)
 
         1 IC (Intermediate Cross Connect):
-            1 switch 12 portas
-            1 Patch Panel 12 portas de fibra ótica - Multivalor
+            1 Switch 12 portas de fibra
+            1 Patch Panel 12 portas de fibra ótica - multimodo
             4 Patch Cords (1 HC piso 0 + 1 HC piso 1)
 
         1 CP (Consolidation Point):
@@ -78,9 +78,9 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
             1 Patch Panel 12 portas de cobre - CAT6
             8 Patch Cords (8 outlets)
   
-        1 Router ??
+        1 Router
         1 MUTOA
-        TE (Telecommunication Enclosure) - XXX dimensão
+        TE (Telecommunication Enclosure) - 21'' cabinet
 
 * **Sala 4.0.5 TR**
 
@@ -89,7 +89,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
             1 Patch Panel 12 portas de cobre - CAT7
             8 Patch Cords (4 CPs + 2 APs + 2 MUTOAs)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 4.0.6 WS**
 
@@ -98,25 +98,30 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
             1 Patch Panel 24 portas de cobre - CAT6
             10 Patch Cords (10 outlets)
   
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * 48 **outlets**
 * 2 Access-points (**AP**) 
-* XXX metros de cabo de **fibra ótica multivalor**
-* XXX metros de cabo de cobre **CAT6**
-* XXX metros de cabo de cobre **CAT7**
+* **107,75** metros de cabo de **fibra ótica multimodo**
+* **190,1** metros de cabo de cobre **CAT6**
+* **205,85** metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
 * 2 **MUTOAs**
-* 5 **TEs**
+* 4 **TEs 19''** racket
+* 1 **TE 21''** cabinet
+* 1 **Router**
+
+
+* **Nota:** Foi individualizado o comprimento de cada cabo na medição.
 
 
 ### *Observações e Implementações*
 
 * Como temos 48 **outlets**, 2 **APs**, 4 **CPs**, 1 **MC**, 1 **IC**, 1 **HC** e 2 **MUTOAs** neste piso, 
-  vamos precisar, no mínimo, de 48 cabos de cobre (**CAT6**), 8 cabos de cobre (**CAT7**) e 6 cabos de **fibra ótica multivalor**. Visto que temos um **HC** com um **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 4 **CPs**. Assim, as salas 4.0.1 e 4.0.4 possuem 1 CP com um switch de 12 portas, enquanto que todas as outras salas onde existem CPs, possuem 1 switch de 24 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
+  vamos precisar, no mínimo, de 48 cabos de cobre (**CAT6**), 8 cabos de cobre (**CAT7**) e 6 cabos de **fibra ótica multimodo**. Visto que temos um **HC** com um **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 4 **CPs**. Assim, as salas 4.0.1 e 4.0.4 possuem 1 CP com um switch de 12 portas, enquanto que todas as outras salas onde existem CPs, possuem 1 switch de 24 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
   
 
-* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multivalor** na ligação entre o **IC** e o **HC** deste piso, por forma a garantir o **balanceamento de carga**.
+* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multimodo** na ligação entre o **IC** e o **HC** deste piso, por forma a garantir o **balanceamento de carga**.
  O mesmo se aplica entre o **MC** e o **IC** que se encontram na sala 4.0.4, fazendo, assim, estas ligações diretas entre os dois sem haver cabos **desnecessariamente longos** (caso os cabos tivessem sido colocados noutro sítio, teriam de ser muito mais longos, gastando, assim, menos cabo de fibra).
  
 
@@ -135,7 +140,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
 * Para ligarmos os **MUTOAs**, é necessário alimentá-los com cabos de cobre **CAT7**. Estes vão sair do **HC** e ligar-se diretamente aos **MUTOAs**, uma vez que precisam de um **alto nível de tráfego de dados** e, até porque estes vão apresentar 6 outlets (usando, por exemplo, o **MUTOA:** *"MINI -C OM ® MuTOA 6 Port Outlet Box"*).
 
 
-* Utilizei cabos de **fibra ótica multivalor** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
+* Utilizei cabos de **fibra ótica multimodo** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
   A partir do **HC**, utilizei apenas cabos de cobre **CAT6** e cabos de cobre **CAT7** na distribuição do piso. Foram utilizados, respetivamente, cabos **CAT7** entre o **HC** e os 2 **APs**, para os 3 **MUTOAs** que se encontram neste piso e, também, entre a ligação do **HC** e os 4 **CPs**. Os cabos **CAT6** foram utilizados entre os **CPs** e os **outlets**.
 
  
@@ -162,6 +167,9 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
 
 
 * o **HC** foi colocado na sala 4.0.5, pois, tal como mencionado no enunciado, esta sala é uma storage area e, neste caso, o **HC** permite uma melhor estruturação da rede e é uma forma de evitar cabos demasiado longos.
+
+
+* A escolha dos **TEs** (Telecommunication Enclosures) foi feita tendo em conta que estes devem permanecer com 50% de espaço livre.
 
 
 * Na maioria das salas vão existir cabos a percorrer calhas subterrâneas já implementadas no edifício.
@@ -202,8 +210,9 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
 | 4.1.6 TR | 7,40 m^2  | 0 Outlets  | 0   |
 | 4.1.7 WS | 51,85 m^2 | 12 Outlets | 1   |
 
-WS - Work Station
-TR - Telecommunication Room
+**WS** - Work Station
+
+**TR** - Telecommunication Room
 
 **Nota:** A sala 4.1.6 é, tal como mencionado no enunciado do projeto, uma storage area e, por isso, não necessita de nenhum outlet.
 
@@ -218,7 +227,7 @@ TR - Telecommunication Room
             8 Patch Cords (8 outlets)
 
          2 MUTOAs
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 4.1.2 WS**
 
@@ -227,7 +236,7 @@ TR - Telecommunication Room
             1 Patch Panel 24 portas de cobre - CAT6
             15 Patch Cords (15 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 4.1.5 WS**
   
@@ -236,7 +245,7 @@ TR - Telecommunication Room
             1 Patch Panel 24 portas de cobre - CAT6
             12 Patch Cords (12 outlets)
   
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 4.1.6 TR**
 
@@ -245,7 +254,7 @@ TR - Telecommunication Room
             1 Patch Panel 12 portas de cobre - CAT7
             9 Patch Cords (4 CPs + 2 APs + 3 MUTOAs)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
 * **Sala 4.1.7 WS**
 
@@ -254,24 +263,29 @@ TR - Telecommunication Room
             1 Patch Panel 12 portas de cobre - CAT6
             8 Patch Cords (8 outlets)
 
-         TE (Telecommunication Enclosure) - XXX dimensão
+         TE (Telecommunication Enclosure) - 19'' racket
 
-* 56 **outlets**
+* 54 **outlets**
 * 2 Access-points (**AP**)
-* XXX metros de cabo de **fibra ótica multivalor**
-* XXX metros de cabo de cobre **CAT6**
-* XXX metros de cabo de cobre **CAT7**
+* **1,112** metros de cabo de **fibra ótica multimodo**
+* **262,9717** metros de cabo de cobre **CAT6**
+* **148,808** metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
 * 3 **MUTOAs**
-* 5 **TEs**
+* 5 **TEs 19''** racket
+
+
+
+* **Nota:** Foi individualizado o comprimento de cada cabo na medição.
+
 
 
 ### *Observações e Implementações*
 
-* Como temos 56 **outlets**, 2 **APs**, 4 **CPs**, 1 **HC** e 3 **MUTOAs** neste piso, vamos precisar de, no mínimo, 56 cabos de cobre **CAT6**, 9 cabos de cobre **CAT7** e 2 cabos de **fibra ótica multivalor**. Sendo que temos um **HC** com 1 **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 4 **CPs**. Assim, a sala 4.1.7 possui 1 **CP** com um **switch** de 12 portas, enquanto que todas as outras salas onde existem **CPs**, possuem 1 **switch** de 24 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
+* Como temos 54 **outlets**, 2 **APs**, 4 **CPs**, 1 **HC** e 3 **MUTOAs** neste piso, vamos precisar de, no mínimo, 54 cabos de cobre **CAT6**, 9 cabos de cobre **CAT7** e 2 cabos de **fibra ótica multimodo**. Sendo que temos um **HC** com 1 **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 4 **CPs**. Assim, a sala 4.1.7 possui 1 **CP** com um **switch** de 12 portas, enquanto que todas as outras salas onde existem **CPs**, possuem 1 **switch** de 24 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
 
 
-* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multivalor** na ligação entre o **IC** (do piso 0) e o **HC**, por forma a garantir o **balanceamento de carga**, vindo estes cabos do piso 0.
+* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multimodo** na ligação entre o **IC** (do piso 0) e o **HC**, por forma a garantir o **balanceamento de carga**, vindo estes cabos do piso 0.
 
 
 * Coloquei o **HC** na sala 4.1.6, porque é mencionado no enunciado do projeto que esta seria uma boa sala para tal e, também, para ser possível uma melhor estruturação da rede neste piso (visto que é uma forma de evitar cabos demasiado longos).
@@ -293,7 +307,7 @@ Optei neste caso por utilizar um patch panel na sala 4.1.1 com 24 portas, enquan
 * Para ligarmos os **MUTOAs**, é necessário alimentá-los com cabos de cobre **CAT7**. Estes vão sair do **HC** e ligar-se diretamente aos **MUTOAs**, uma vez que precisam de um **alto nível de tráfego de dados** e, até porque estes vão apresentar 6 outlets (usando, por exemplo, o **MUTOA**: *"MINI -C OM ® MuTOA 6 Port Outlet Box"*).
 
 
-* Utilizei cabos de **fibra ótica multivalor** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
+* Utilizei cabos de **fibra ótica multimodo** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
   A partir do **HC**, utilizei apenas cabos de cobre **CAT6** e cabos de cobre **CAT7** na distribuição do piso. Foram utilizados, respetivamente, cabos **CAT7** entre o **HC** e os 2 **APs**, para os 3 **MUTOAs** que se encontram neste piso e, também, entre a ligação do **HC** e os 4 **CPs**. Os cabos **CAT6** foram utilizados entre os **CPs** e os **outlets**.
 
   
@@ -316,10 +330,13 @@ Optei neste caso por utilizar um patch panel na sala 4.1.1 com 24 portas, enquan
 * Todos os **patch cords** seguem a regra de terem um comprimento entre **0,5 e 5 metros**.
 
 
+* A escolha dos **TEs** (Telecommunication Enclosures) foi feita tendo em conta que estes devem permanecer com 50% de espaço livre.
+
+
 * Na maioria das salas, tal como mencionado numa nota debaixo do sketch, vão existir cabos a percorrer calhas que se encontram no teto falso, o qual cobre por completo todo o andar.
 
 
-## **Cálculos e finais observações**
+## **Informações adicionais**
 
 * Para determinar o número de outlets necessários para cada divisão, baseei-me na seguinte regra: **"Os padrões de cabeamento estruturado especificam um mínimo de duas saídas por área de trabalho, também duas saídas para cada 10 metros quadrados de área. Portanto, para uma área de trabalho acima de 10 m^2, quatro saídas devem estar disponíveis."**.
 
@@ -363,3 +380,6 @@ Also, an up to 50% oversizing is wise to accommodate future upgrades."**.
 
 
 * Estão, também, disponibilizados os sketches com as medições tanto do piso 0 como do piso 1, uma vez que, no sketch total, algumas medições ficaram um pouco tapadas pelos cabos que por lá passavam.
+
+
+* Também foi disponiblizado um ficheiro *.txt* com as medições realizadas dos cabos usados nos sketches.
