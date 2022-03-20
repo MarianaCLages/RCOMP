@@ -161,8 +161,8 @@ para esconder e organizar os cabos, sendo esta colada ao chão.
 assim um alto nível de tráfego de dados.Para alimentação dos AP o cabo CAT7 irá utilizar a tecnologia POE para alimentar de energia elétrica os equipamentos. Irão ser utilizados Power Injectors para permitir ao cabo transportar energia elétrica. Estes dispositivos irão ser colocados na saida do HC para assim alimentar a ligação.
 
 
-* Usou-se calhas para que certos outlets podessem ser colocadas no meio da sala para
-que os utilizadores podessem aceder ás outlets numa distância máxima de 2 metros.
+* Usou-se calhas para que certos outlets pudessem ser colocadas no meio da sala para
+que os utilizadores pudessem aceder ás outlets numa distância máxima de 2 metros.
 
 
 * A equipa achou pertinente utilizar cabos CAT7 entre o HC e os APs representados no sketch, pois este 
@@ -172,7 +172,7 @@ permite um alto nível de tráfego de dados.
 * Para ligarmos os **MUTOAs**, é necessário alimentá-los 
 com cabos de cobre **CAT7**. Estes vão sair do **HC** e 
 ligar-se diretamente aos **MUTOAs**, uma vez que 
-precisam de um alto nível de tráfego de dados  (usando, por exemplo, o MUTOA: "MINI -C OM ® MuTOA 6 Port 
+precisam de um alto nível de tráfego de dados (usando, por exemplo, o MUTOA: "MINI -C OM ® MuTOA 6 Port 
 Outlet Box").
 
 
