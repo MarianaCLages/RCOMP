@@ -59,7 +59,7 @@ Começemos por apresentar a planta do rés do chão e o seu respetivo cabeamento
 
 **Tabela de Materiais:**
 
-![TabelaDeMateriaisPiso0](TabelaDeMateriaisPiso0.PNG)
+![TabelaDeMateriaisPiso0](TabelaDeMateriaisPiiso0.PNG)
 
 #Justificação dos materiais usados e do posicionamento dos mesmos
 
