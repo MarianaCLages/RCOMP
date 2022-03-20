@@ -74,7 +74,7 @@ deste piso, foi colocado o **HC**, o **IC** e um **CP** que faz conexão com as 
 
 
 * As salas 3.0.5,3.0.6,3.0.7 e a 3.0.8 têm os seus prórpios **CPs** cada
-uma com 12 portas
+uma com 12 portas.
 
 
 * O cabo **CAT7** é utilizado para conectar os **CPs**,**HC** e o **AP** entre eles, permitindo
