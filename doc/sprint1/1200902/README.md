@@ -1,9 +1,9 @@
 RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 ===========================================
 
-### <p> Durante a realização do **Sprint 1** do trabalho de **RCOMP**, foram desenvolvidos os sketches abaixo e as suas devidas explicações, que ilustram uma possível solução de cablagem (e respetivos equipamentos eletrónicos) que cobre por completo o **edifício 2**. Esta solução foi discutida em grupo para um melhor entendimento do mesmo.</p>
+#### <p> Durante a realização do **Sprint 1** do trabalho de **RCOMP**, foram desenvolvidos os sketches abaixo e as suas devidas explicações, que ilustram uma possível solução de cablagem (e respetivos equipamentos eletrónicos) que cobre por completo o **edifício 2**. Esta solução foi discutida em grupo para um melhor entendimento do mesmo.</p>
 
-### Este edifício apresenta 18 salas no total, 6 no piso 0 e 12 no piso 1. Cada piso contém 2 WC, onde não vão ser necessários outlets, tal como especificado no enunciado do projeto. O edifício tem 20 metros de comprimento e 20 metros de largura, dando, assim, uma área de 400 metros quadrados no total. Seguem-se os sketches referidos e, a seguir, uma breve explicação dos mesmos.
+#### Este edifício apresenta 18 salas no total, 6 no piso 0 e 12 no piso 1. Cada piso contém 2 WC, onde não vão ser necessários outlets, tal como especificado no enunciado do projeto. O edifício tem 20 metros de comprimento e 20 metros de largura, dando, assim, uma área de 400 metros quadrados no total. Seguem-se os sketches referidos e, a seguir, uma breve explicação dos mesmos.
 
 
 #  ***Floor 0***
@@ -45,12 +45,12 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 
         1 MC (Main Cross-Connect):
             1 switch 12 portas
-            1 Patch Panel 12 portas de fibra ótica - Multivalor
+            1 Patch Panel 12 portas de fibra ótica - Multimodo
             2 Patch Cords (1 IC)
 
         1 IC (Intermediate Cross-Connect):
             1 switch 12 portas
-            1 Patch Panel 12 portas de fibra ótica - Multivalor
+            1 Patch Panel 12 portas de fibra ótica - Multimodo
             4 Patch Cords (1 HC piso 0 + 1 HC piso 1)
 
         1 HC (Horizontal Cross-Connect):
@@ -91,7 +91,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 
 * 44 **outlets**
 * 2 Access-points (**AP**)
-* 2,8(+) metros de cabo de **fibra ótica multivalor**
+* 2,8(+) metros de cabo de **fibra ótica multimodo**
 * XXX metros de cabo de cobre **CAT6**
 * 110,4 metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
@@ -102,10 +102,10 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 ### *Observações e Implementações*
 
 * Como temos 44 **outlets**, 2 **APs**, 3 **CPs**, 1 **MC**, 1 **IC**, 1 **HC** e 2 **MUTOAs** neste piso,
-  vamos precisar, no mínimo, de 44 cabos de cobre (**CAT6**), 7 cabos de cobre (**CAT7**) e 6 cabos de **fibra ótica multivalor**. Visto que temos um **HC** com um **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 3 **CPs**. Assim, as salas 2.0.3 e 2.0.5 possuem 1 CP com um switch de 24 portas, enquanto que a sala 2.0.2 possui 1 switch de apenas 12 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
+  vamos precisar, no mínimo, de 44 cabos de cobre (**CAT6**), 7 cabos de cobre (**CAT7**) e 6 cabos de **fibra ótica multimodo**. Visto que temos um **HC** com um **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 3 **CPs**. Assim, as salas 2.0.3 e 2.0.5 possuem 1 CP com um switch de 24 portas, enquanto que a sala 2.0.2 possui 1 switch de apenas 12 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
 
 
-* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multivalor** na ligação entre o **IC** e o **HC** deste piso, por forma a garantir o **balanceamento de carga**.
+* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multimodo** na ligação entre o **IC** e o **HC** deste piso, por forma a garantir o **balanceamento de carga**.
   O mesmo se aplica entre o **MC** e o **IC** que se encontram na sala 2.0.1, fazendo, assim, estas ligações diretas entre os dois sem haver cabos **desnecessariamente longos** (caso os cabos tivessem sido colocados noutro sítio, teriam de ser muito mais longos, gastando, assim, menos cabo de fibra).
 
 
@@ -121,7 +121,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 * Para ligarmos os **MUTOAs**, é necessário alimentá-los com cabos de cobre **CAT7**. Estes vão sair do **HC** e ligar-se diretamente aos **MUTOAs**, uma vez que precisam de um **alto nível de tráfego de dados** e, até porque estes vão apresentar 6 outlets (usando, por exemplo, o **MUTOA:** *"MINI -C OM ® MuTOA 6 Port Outlet Box"*).
 
 
-* Utilizei cabos de **fibra ótica multivalor** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
+* Utilizei cabos de **fibra ótica multimodo** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
   A partir do **HC**, utilizei apenas cabos de cobre **CAT6** e cabos de cobre **CAT7** na distribuição do piso. Foram utilizados, respetivamente, cabos **CAT7** entre o **HC** e os 2 **APs**, para os 2 **MUTOAs** que se encontram neste piso e, também, entre a ligação do **HC** e os 3 **CPs**. Os cabos **CAT6** foram utilizados entre os **CPs** e os **outlets**.
 
 
@@ -154,6 +154,9 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 
 
 * No mesmo **TE** em que se encontra o **MC** (sala 2.0.1) é onde se localiza o router de todo o edifício.
+
+
+* A escolha dos **TEs** (Telecommunication Enclosures) foi feita tendo em conta que estes devem permanecer com **50% de espaço livre**.
 
 
 
@@ -259,7 +262,7 @@ TR - Telecommunication Room
 
 * 48 **outlets**
 * 2 Access-points (**AP**)
-* 0,3 metros de cabo de **fibra ótica multivalor**
+* 0,3 metros de cabo de **fibra ótica multimodo**
 * 214,1 metros de cabo de cobre **CAT6**
 * 156 metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
@@ -268,10 +271,10 @@ TR - Telecommunication Room
 
 ### *Observações e Implementações*
 
-* Como temos 48 **outlets**, 2 **APs**, 5 **CPs** e 1 **HC** neste piso, vamos precisar de, no mínimo, 48 cabos de cobre **CAT6**, 7 cabos de cobre **CAT7** e 2 cabos de **fibra ótica multivalor**. Sendo que temos um **HC** com 1 **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 5 **CPs**. Assim, as salas 2.1.5 e 2.1.7 possuem 1 **CP** com um **switch** de 24 portas, enquanto que todas as outras salas onde existem **CPs**, possuem 1 **switch** de 12 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
+* Como temos 48 **outlets**, 2 **APs**, 5 **CPs** e 1 **HC** neste piso, vamos precisar de, no mínimo, 48 cabos de cobre **CAT6**, 7 cabos de cobre **CAT7** e 2 cabos de **fibra ótica multimodo**. Sendo que temos um **HC** com 1 **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 5 **CPs**. Assim, as salas 2.1.5 e 2.1.7 possuem 1 **CP** com um **switch** de 24 portas, enquanto que todas as outras salas onde existem **CPs**, possuem 1 **switch** de 12 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
 
 
-* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multivalor** na ligação entre o **IC** (do piso 0) e o **HC**, por forma a garantir o **balanceamento de carga**, vindo estes cabos do piso 0.
+* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multimodo** na ligação entre o **IC** (do piso 0) e o **HC**, por forma a garantir o **balanceamento de carga**, vindo estes cabos do piso 0.
 
 
 * Coloquei o **HC** na sala 2.1.1, porque é mencionado no enunciado do projeto que esta seria uma boa sala para tal e, também, para ser possível uma melhor estruturação da rede neste piso (visto que é uma forma de evitar cabos demasiado longos).
@@ -292,7 +295,7 @@ TR - Telecommunication Room
 * O **CP** da sala 2.1.12 vai alimentar tanto os outlets da própria sala como os outlets da sala 2.1.11, utilizando, assim, 9 portas do switch, o qual possui 12 portas no total e, portanto, ficam a sobrar 3 portas, o que permite possíveis melhorias futuras.
 
 
-* Utilizei cabos de **fibra ótica multivalor** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
+* Utilizei cabos de **fibra ótica multimodo** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
   A partir do **HC**, utilizei apenas cabos de cobre **CAT6** e cabos de cobre **CAT7** na distribuição do piso. Foram utilizados, respetivamente, cabos **CAT7** entre o **HC** e os 2 **APs** e, também, entre a ligação do **HC** e os 5 **CPs**. Os cabos **CAT6** foram utilizados entre os **CPs** e os **outlets**.
 
 
@@ -315,10 +318,13 @@ TR - Telecommunication Room
 * Todos os **patch cords** seguem a regra de terem um comprimento entre **0,5 e 5 metros**.
 
 
-* Na maioria das salas vão existir cabos a percorrer calhas que se encontram no teto falso, o qual cobre por completo todo o andar.
+* Na maioria das salas vão existir cabos a percorrer calhas que se encontram no **teto falso**, o qual cobre por completo todo o andar.
 
 
-## **Cálculos e finais observações**
+* A escolha dos **TEs** (Telecommunication Enclosures) foi feita tendo em conta que estes devem permanecer com **50% de espaço livre**.
+
+
+## **Informações Adicionais**
 
 * Para determinar o número de outlets necessários para cada divisão, baseei-me na seguinte regra: **"Os padrões de cabeamento estruturado especificam um mínimo de duas saídas por área de trabalho, também duas saídas para cada 10 metros quadrados de área. Portanto, para uma área de trabalho acima de 10 m^2, quatro saídas devem estar disponíveis."**.
 
