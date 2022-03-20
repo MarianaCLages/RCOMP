@@ -359,3 +359,6 @@ TR - Telecommunication Room
 
 
 * Para além dos ficheiros *.png* disponibilizados dos sketches do piso 0 e do piso 1, também foi disponibilizado o seu respetivo ficheiro *.svg*, no entanto, este revelou alguns problemas de formatação no momento em que foi exportado, por isso optei por utilizar os ficheiros *.png* na apresentação do markdown.
+
+
+* As medições de cada divisão de ambos os pisos estão referenciados nos sketches.
