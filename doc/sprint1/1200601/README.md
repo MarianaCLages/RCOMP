@@ -39,7 +39,7 @@ Começemos por apresentar a planta do rés do chão e o seu respetivo cabeamento
 
 **Legenda:**
 
-![Legenda](legenda.png)
+![Legenda](legenda.PNG)
 
 **Informações de cada sala:**
 
@@ -59,7 +59,7 @@ Começemos por apresentar a planta do rés do chão e o seu respetivo cabeamento
 
 **Tabela de Materiais:**
 
-![TabelaDeMateriaisPiso0](TabelaDeMateriaisPiiso0.PNG)
+![TabelaDeMateriaisPiso0](TabelaDeMateriaisP0.PNG)
 
 #Justificação dos materiais usados e do posicionamento dos mesmos
 
@@ -116,7 +116,7 @@ o que vai fazer com que seja necessário 2 **APs** no mesmo piso para que fique 
 
 **Legenda:**
 
-![Legenda](legenda.png)
+![Legenda](legenda.PNG)
 
 | Sala   | Área      | Outlets   | CP                                    |
 |:-------|:----------|:----------|:--------------------------------------|
