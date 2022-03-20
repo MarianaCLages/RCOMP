@@ -264,7 +264,7 @@ TR - Telecommunication Room
 
 * 48 **outlets**
 * 2 Access-points (**AP**)
-* 0,4 metros de cabo de **fibra ótica multimodo**
+* 4,4 metros de cabo de **fibra ótica multimodo**
 * 214,1 metros de cabo de cobre **CAT6**
 * 156 metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
