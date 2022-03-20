@@ -2,8 +2,6 @@
 
 ### Sprint master: 1200920
 
-(This file is to be created/edited by the sprint master only)
-
 # 1. Sprint's backlog
 
 | Task  | Task Description                                                                              |
@@ -13,26 +11,18 @@
 | T.1.3 | Development of a structured cabling project for building 3.                                   |
 | T.1.4 | Development of a structured cabling project for building 4.                                   |
 
-
-
 # 2. Technical decisions and coordination
-
-In this section, all technical decisions taken in the planning meeting should be mentioned. Most importantly, all technical decisions impacting on the subtasks implementation must be settled on this meeting and specified here.
 
 #### Examples:
 
-- Backbone cable types to be used
-- VLAN IDs to be used
-- VTP domains
-- WiFi channels
-- IPv4 networks' addresses and routers' addresses
-- Routing protocols, AS identifiers and area identifiers
-- Application protocols outlining (further coordination may be required between members)
+- Irão ser usados cabos de **fibra ótica multimodo** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno)
+- Irá ser utilizado cabo **cat 7** entre o **HC** e os **CP** e cabo **cat 6** entre o **CP** e os **outlets**
+- Os canais de WIFI a ser utilizados deverão de ser intercalados, por exemplo dois **AP** num piso deverão estar em canais que distem entre si uma **frequência de 22MHz**
+- Devido às paredes de betão armado deste edifício, temos de ter em consideração que o raio de alcance de cada **AP** é reduzido por volta de 10-20 metros, o que faz com que sejam necessários **2 APs** no mesmo piso para ficar completamente coberto por ‘wireless’.
 
 # 3. Subtasks assignment
 
-
-- 1200601 - T.1.1
+- 1200920 - T.1.1
 - 1200902 - T.1.2
-- 1200920 - T.1.3
+- 1200601 - T.1.3
 - 1201487 - T.1.4

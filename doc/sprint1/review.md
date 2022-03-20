@@ -15,41 +15,18 @@
 
 # 2. Subtasks assessment
 
-One by one, each team member presents his/her outcomes to the team, the team assesses the accomplishment of the subtask backlog.
-The subtask backlog accomplishment can be assessed as one of:
-
-- Totally implemented with no issues
-- Totally implemented with issues
-- Partially implemented with no issues
-- Partially implemented with issues
-
-For the last three cases, a text description of what has not been implemented and present issues must be added.
-Unimplemented features and issues solving is assigned to the same member on the next sprint.
-
-(Examples)
-
-## 2.1. 1111111 - Structured cable design for building A, floors 2 and 3
+## 1.1. 1200920 - Development of a structured cabling project for building 1, encompassing the campus backbone.
 
 ### Totally implemented with no issues.
 
-## 2.2. 2222222 - Structured cable design for building B, floors 0 and 1
+## 1.2. 1200902 - Development of a structured cabling project for building 2.
 
-### Totally implemented with issues.
+### Totally implemented with no issues.
 
-The number of outlets in room X is incorrect.
-A better solution for the cable pathways between the floor 1 distributer and rooms Z and Y should be found.
+## 1.3. 1200601 - Development of a structured cabling project for building 3.
 
-## 2.3. 3333333 - VLAN devices configuration for building C
+### Totally implemented with no issues.
 
-### Partially implemented with no issues.
+## 1.4. 1201487 - Development of a structured cabling project for building 4.
 
-The VLAN CCCC with VLANID 400 has not been implemented.
-The VTP configuration is not present in switch DD.
-
-## 2.4. 4444444 - IPv4 addressing and routing configurations for building D
-
-### Partially implemented with issues.
-
-The IPv4 network TTT has not been implemented.
-The routing table at router FF has the wrong mask for network YYY.
-Nodes on network CCC are not receiving the default-gateway by DHCP.
+### Totally implemented with no issues.

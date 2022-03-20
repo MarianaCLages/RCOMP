@@ -33,6 +33,8 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 
 - **Nota 3:** Como é possível observar no sketch, optei por usar uma só linha para representar todos os cabos que se encontram paralelos uma vez que a imagem iria ficar sobrecarregada com muitas linhas umas ao lado das outras.
 
+- **Nota 4:** É mencionado, no enunciado do projeto, que existe **teto falso em todo o piso 1**, colocado a 2,5 metros do chão, e que facilita a **cablagem** e a sua **estruturação**.
+
 ## **_Floor 0_**
 
 ![Floor0_Building1](/doc\sprint1\1200920\1.0.png)
@@ -44,7 +46,7 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 | Sala             | Área      | Outlets    | CP                                    |
 | :--------------- | :-------- | :--------- | :------------------------------------ |
 | 1.0.1            | 19.04 m^2 | 4 Outlets  | 0                                     |
-| 1.0.2 Datacenter | 31.28 m^2 | 6 Outlets  | 1 (Switch e patch panel de 42 portas) |
+| 1.0.2 Datacenter | 31.28 m^2 | 6 Outlets  | 1 (Switch e patch panel de 48 portas) |
 | 1.0.3            | 27.2 m^2  | 6 Outlets  | 0                                     |
 | 1.0.4            | 42.84 m^2 | 10 Outlets | 1 (Switch e patch panel de 16 portas) |
 | 1.0.5            | 13.8 m^2  | 4 Outlets  | 0                                     |
@@ -59,12 +61,14 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 - 16 metros de cabo fibra multi-modo
 - 205 metros de cabo cat7
 - 1118 metros de cabo cat6
-- 1 Switch de 42 portas
-- 3 Switch de 16 portas
-- 1 Switch de 12 portas
-- 1 Patch panel de 42 portas
-- 3 Patch panel de 16 portas
-- 1 Patch panel de 12 portas
+- 1 Patch cat7 de 12 portas
+- 1 Switch panel cat7 de 12 portas
+- 1 Switch cat6 de 48 portas
+- 3 Switch cat6 de 16 portas
+- 1 Switch cat6 de 12 portas
+- 1 Patch panel cat6 de 48 portas
+- 3 Patch panel cat6 de 16 portas
+- 1 Patch panel cat6 de 12 portas
 - 1 AP
 - 1 Power Injectors
 - 60 Outlets
@@ -73,11 +77,13 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 - 1 IC
 - 4 19'' Telecommunications Enclosures
 - 1 21'' Telecommunications Enclosures
-- 1 Fiber patch panel de 8 portas
-- 1 Fiber switch de 8 portas
+- 2 Fiber patch panel de 12 portas
+- 2 Fiber switch de 12 portas
 - 1 Router
 
 ### Observações de Implementação
+
+- Está contabilizado na quantidade cabo os cabos a serem utilizados como **patch cords**, sendo cada um deste cabos de comprimento de 0.75 m
 
 - Devido á natureza da sala 1.0.2 (Datacenter) foram escolhidos um switch e um patch panel com imensas portas disponíveis.
 
@@ -118,7 +124,9 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 
 - 20 metros de cabo fibra multi-modo
 - 290 metros de cabo cat7
-- 861.4 metros de cabo cat6
+- 865 metros de cabo cat6
+- 1 Patch panel cat7 de 12 portas
+- 1 Switch cat7 de 12 portas
 - 1 Switch de 24 portas
 - 1 Switch de 16 portas
 - 3 Switch de 12 portas
@@ -133,8 +141,8 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 - 1 MUTOA
 - 1 HC
 - 6 19'' Telecommunications Enclosures
-- 1 Fiber patch panel de 8 portas
-- 1 Fiber switch de 8 portas
+- 2 Fiber patch panel de 12 portas
+- 2 Fiber switch de 12 portas
 
 ### Observações de Implementação
 
@@ -149,3 +157,28 @@ De modo a prevenir eventuais falhas de cabos será adotada redundância de cabos
 - Para alimentação dos **AP** o cabo **CAT7** irá utilizar a tecnologia **POE** para alimentar de energia elétrica os equipamentos. Irão ser utilizados **Power Injectors** para permitir ao cabo transportar energia elétrica. Estes dispositivos irão ser colocados na saida do **HC** para assim alimentar a ligação.
 
 - Devido às paredes de betão armado que existem no piso, temos de ter em consideração o fator que o raio de alcance de cada **AP** é reduzido por volta de 10 metros, o que vai fazer com que seja necessário **2 APs** no mesmo piso para que fique completamente coberto por wireless;
+
+# Inventário Geral do Sprint
+
+- 1513 m de cabo **CAT 7**
+- 2610 m de cabo **CAT 6**
+- 175 m de fibra **multimodo**
+- 413 **outlets**
+- 15 **AP**
+- 8 **Switch de 8 portas**
+- 8 **Patch Panel de 8 portas**
+- 27 **Switch de 12 portas**
+- 27 **Patch Panel de 12 portas**
+- 4 **Switch de 16 portas**
+- 4 **Patch Panel de 16 portas**
+- 13 **Switch de 24 portas**
+- 13 **Patch Panel de 24 portas**
+- 1 **Switch de 48 portas**
+- 1 **Patch Panel de 48 portas**
+- 14 **MUTOA**
+- 15 **Power Injectors**
+- 4 **Routers**
+- 41 **TE 19''**
+- 4 **TE 21''**
+- 16 **Switch fibra 12 portas**
+- 16 **Patch Panel fibra de 12 portas**

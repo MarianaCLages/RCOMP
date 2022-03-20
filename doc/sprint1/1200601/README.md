@@ -164,7 +164,6 @@ assim um alto nível de tráfego de dados.Para alimentação dos AP o cabo CAT7 
 * Usou-se calhas para que certos outlets pudessem ser colocadas no meio da sala para
 que os utilizadores pudessem aceder ás outlets numa distância máxima de 2 metros.
 
-
 * A equipa achou pertinente utilizar cabos CAT7 entre o HC e os APs representados no sketch, pois este 
 permite um alto nível de tráfego de dados.
 
