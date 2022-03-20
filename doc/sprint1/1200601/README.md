@@ -1,4 +1,4 @@
-#RCOMP 2021-2022 Project - Sprint 1 - Membro 1200601
+#RCOMP 2021-2022 Project - Sprint 1 - Member 1200601 folder
 
 
 #Introdução
@@ -115,7 +115,8 @@ calhas subterrâneas que foram previemente estabelecidas no edifício.
 #Explicação da Seleção dos Materiais Usados
 
 * Colocou-se um **MUTOA** nas salas: 3.1.1,3.1.2,3.1.7 e 3.1.9 uma vez que existe uma área ampla no meio da sala 
-e assumindo que haverá um elevado número de utilizadores nestas salas.
+e assumindo que haverá um elevado número de utilizadores nestas salas,  usou-se calhas
+para esconder e organizar os cabos, sendo esta colada ao chão.
 
 * O cabo **CAT7** é utilizado para conectar os **CPs**,**HC** e o **AP** entre eles, permitindo
 assim um alto nível de tráfego de dados.Para alimentação dos AP o cabo CAT7 irá utilizar a tecnologia POE para alimentar de energia elétrica os equipamentos. Irão ser utilizados Power Injectors para permitir ao cabo transportar energia elétrica. Estes dispositivos irão ser colocados na saida do HC para assim alimentar a ligação.
