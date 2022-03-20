@@ -92,7 +92,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 * 44 **outlets**
 * 2 Access-points (**AP**)
 * 2,8(+) metros de cabo de **fibra ótica multimodo**
-* XXX metros de cabo de cobre **CAT6**
+* 352,4 metros de cabo de cobre **CAT6**
 * 110,4 metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
 * 2 **MUTOAs**
@@ -264,7 +264,7 @@ TR - Telecommunication Room
 
 * 48 **outlets**
 * 2 Access-points (**AP**)
-* 0,3 metros de cabo de **fibra ótica multimodo**
+* 0,4 metros de cabo de **fibra ótica multimodo**
 * 214,1 metros de cabo de cobre **CAT6**
 * 156 metros de cabo de cobre **CAT7**
 * 2 **Power Injectors**
