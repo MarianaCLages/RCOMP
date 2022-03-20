@@ -151,11 +151,11 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1201487 folder
 * Para alcançar tanto os **outlets** como os **MUTOAs** que se encontram no meio da sala, é utilizada calha para esconder e organizar os cabos, sendo esta colada ao chão (e, caso necessário, podem existir tomadas elétricas nesta mesma calha).
 
 
-* Os **APs** deste andar foram distribuídos de modo a cobrir o máximo espaço possível com ‘wireless’ do piso 0 e, possívelmente, entrada e arredores.
+* Os **APs** foram distribuídos de modo a cobrir o máximo espaço possível com ‘wireless’ do piso 0 e, possívelmente, entrada e arredores.
  No sketch do piso 0, os **APs** encontram-se colocados de forma simétrica relativamente aos do piso 1, possibilitando, assim, o máximo de cobertura possível com apenas 4 **APs** no total.
 
 
-* Para a alimentação dos **APs**, o cabo **CAT7** irá utilizar a tecnologia **POE** (Power over Ethernet). Irão ser utilizados **Power Injectors** para permitir ao cabo o transporte de energia elétrica. Estes dispositivos irão ser colocados na saída do **HC**, para alimentar a ligação.
+* Para a alimentação dos **APs**, o cabo **CAT7** irá utilizar a tecnologia **PoE** (Power over Ethernet). Irão ser utilizados **Power Injectors** para permitir ao cabo o transporte de energia elétrica. Estes dispositivos irão ser colocados na saída do **HC**, para alimentar a ligação.
 
 
 * Todos os **patch cords** seguem a regra de terem um comprimento entre **0,5 e 5 metros**.
@@ -271,7 +271,7 @@ TR - Telecommunication Room
 * Como temos 56 **outlets**, 2 **APs**, 4 **CPs**, 1 **HC** e 3 **MUTOAs** neste piso, vamos precisar de, no mínimo, 56 cabos de cobre **CAT6**, 9 cabos de cobre **CAT7** e 2 cabos de **fibra ótica multivalor**. Sendo que temos um **HC** com 1 **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 4 **CPs**. Assim, a sala 4.1.7 possui 1 **CP** com um **switch** de 12 portas, enquanto que todas as outras salas onde existem **CPs**, possuem 1 **switch** de 24 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
 
 
-* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multivalor** na ligação entre o **IC** (do piso 0) e o **HC**, por a garantir o **balanceamento de carga**, vindo estes cabos do piso 0.
+* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multivalor** na ligação entre o **IC** (do piso 0) e o **HC**, por forma a garantir o **balanceamento de carga**, vindo estes cabos do piso 0.
 
 
 * Coloquei o **HC** na sala 4.1.6, porque é mencionado no enunciado do projeto que esta seria uma boa sala para tal e, também, para ser possível uma melhor estruturação da rede neste piso (visto que é uma forma de evitar cabos demasiado longos).
@@ -284,7 +284,7 @@ TR - Telecommunication Room
 
 
 * No caso das salas 4.1.1 e 4.1.7, cada uma delas apresenta 1 **CP** que vai ficar encarregue de alimentar os outlets respetivos de cada uma das salas. No caso da sala 4.1.1. vão ser utilizadas 8 portas do switch de 24 portas, sobrando, assim, 16 portas e, no caso da sala 4.1.7, vão ser utilizadas 8 portas do switch de 12 portas, sobrando, assim, 4 portas. Ambas as salas apresentam outlets em sobra, que vão possibilitar, se necessário no futuro, possíveis melhorias.
-Optei neste caso por utilizar um patch panel na sala 4.1.1 com 24 portas enquanto que na sala 4.1.7 utilize um de 12 portas, uma vez que, a sala 4.1.1 é muito maior do que a sala 4.1.7 o que significa que poderá ser necessário mais outlets do que a regra geral naquela sala, possibilitanto assim essa transição e melhoria.
+Optei neste caso por utilizar um patch panel na sala 4.1.1 com 24 portas, enquanto que, na sala 4.1.7, utilizei um de 12 portas, uma vez que a sala 4.1.1 é muito maior do que a sala 4.1.7, o que significa que poderão ser necessário mais outlets do que a regra geral naquela sala, possibilitando, assim, essa transição e melhoria.
 
   
 * Neste piso, foram ainda usados 3 **MUTOAs**, mais precisamente, nas salas 4.1.1 e 4.1.7, visto que existe **uma área ampla no meio da sala** e o mesmo permite uma distribuição mais organizada pelo espaço, permitindo que bastantes utilizadores que se encontrem no meio da sala tenham um outlet perto de si.
@@ -306,8 +306,8 @@ Optei neste caso por utilizar um patch panel na sala 4.1.1 com 24 portas enquant
 * Para alcançar tanto os **outlets** como os **MUTOAs** que se encontram no meio da sala, é utilizada calha para esconder e organizar os cabos, sendo esta colada ao chão (e, caso necessário, podem existir tomadas elétricas nesta mesma calha);
 
 
-* Os **APs** deste andar foram distribuídos de modo a cobrir o máximo espaço possível com ‘wireless’ do piso 1 e, possivelmente, entrada e arredores.
-  No sketch do piso 1, os **APs** encontram-se colocados de forma simétrica relativamente aos do piso 0, possibilitando, assim, o máximo de cobertura possível com apenas 4 **APs** no total.
+* Os **APs** foram distribuídos de modo a cobrir o máximo espaço possível com ‘wireless’ do piso 1 e, possivelmente, entrada e arredores.
+  No sketch do piso 1, os **APs** encontram-se colocados de forma simétrica relativamente aos do piso 0, possibilitando, assim, o máximo de cobertura possível com apenas 4 **APs** no total (todo o edifício).
 
 
 * Para a alimentação dos **APs**, o cabo **CAT7** irá utilizar a tecnologia **PoE** (Power over Ethernet). Irão ser utilizados **Power Injectors** para permitir ao cabo o transporte de energia elétrica. Estes dispositivos irão ser colocados na saída do **HC**, para alimentar a ligação.

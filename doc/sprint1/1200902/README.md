@@ -137,7 +137,7 @@ RCOMP 2021-2022 Project - Sprint 1 - Member 1200902 folder
 * Para alcançar tanto os **outlets** como os **MUTOAs** que se encontram no meio da sala, é utilizada calha para esconder e organizar os cabos, sendo esta colada ao chão (e, caso necessário, podem existir tomadas elétricas nesta mesma calha).
 
 
-* Os **APs** deste andar foram distribuídos de modo a cobrir o máximo espaço possível com ‘wireless’ do piso 0 e, possívelmente, entrada e arredores.
+* Os **APs** foram distribuídos de modo a cobrir o máximo espaço possível com ‘wireless’ do piso 0 e, possívelmente, entrada e arredores.
   No sketch do piso 0, os **APs** encontram-se colocados de forma simétrica relativamente aos do piso 1, possibilitando, assim, o máximo de cobertura possível com apenas 4 **APs** no total.
 
 
@@ -271,5 +271,91 @@ TR - Telecommunication Room
 * Como temos 48 **outlets**, 2 **APs**, 5 **CPs** e 1 **HC** neste piso, vamos precisar de, no mínimo, 48 cabos de cobre **CAT6**, 7 cabos de cobre **CAT7** e 2 cabos de **fibra ótica multivalor**. Sendo que temos um **HC** com 1 **switch** de 12 portas (do tipo **CAT7**), vamos precisar de 5 **CPs**. Assim, as salas 2.1.5 e 2.1.7 possuem 1 **CP** com um **switch** de 24 portas, enquanto que todas as outras salas onde existem **CPs**, possuem 1 **switch** de 12 portas, por forma a conseguirmos fazer as distribuições das tomadas pelas várias salas de forma organizada e estruturada.
 
 
-* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multivalor** na ligação entre o **IC** (do piso 0) e o **HC**, por a garantir o **balanceamento de carga**, vindo estes cabos do piso 0.
+* Apliquei a **redundância** com a utilização de 2 cabos de **fibra ótica multivalor** na ligação entre o **IC** (do piso 0) e o **HC**, por forma a garantir o **balanceamento de carga**, vindo estes cabos do piso 0.
 
+
+* Coloquei o **HC** na sala 2.1.1, porque é mencionado no enunciado do projeto que esta seria uma boa sala para tal e, também, para ser possível uma melhor estruturação da rede neste piso (visto que é uma forma de evitar cabos demasiado longos).
+
+
+* O **CP** da sala 2.1.2 vai alimentar tanto os outlets da própria sala como os outlets da sala 2.1.3, utilizando, assim, 9 portas do switch, o qual possui 12 portas no total e, portanto, ficam a sobrar 3 portas, o que permite possíveis melhorias futuras.
+
+
+* O **CP** da sala 2.1.5 vai alimentar tanto os outlets da própria sala como os outlets das salas 2.1.4 e 2.1.6, utilizando, assim, 13 portas do switch, o qual possui 24 portas no total e, portanto, ficam a sobrar 11 portas, o que permite possíveis melhorias futuras.
+
+
+* O **CP** da sala 2.1.7 vai alimentar tanto os outlets da própria sala como os outlets da sala 2.1.8, utilizando, assim, 13 portas do switch, o qual possui 24 portas no total e, portanto, ficam a sobrar 11 portas, o que permite possíveis melhorias futuras.
+
+
+* O **CP** da sala 2.1.9 vai alimentar tanto os outlets da própria sala como os outlets da sala 2.1.10, utilizando, assim, 9 portas do switch, o qual possui 12 portas no total e, portanto, ficam a sobrar 3 portas, o que permite possíveis melhorias futuras.
+
+
+* O **CP** da sala 2.1.12 vai alimentar tanto os outlets da própria sala como os outlets da sala 2.1.11, utilizando, assim, 9 portas do switch, o qual possui 12 portas no total e, portanto, ficam a sobrar 3 portas, o que permite possíveis melhorias futuras.
+
+
+* Utilizei cabos de **fibra ótica multivalor** até ao **HC**, uma vez que o seu comprimento não justifica a utilização de cabos de **fibra ótica monomodo** (o que seria uma melhor opção no caso de os cabos que estivessem a ser utilizados tivessem um comprimento superior a 1KM e, também, porque os mesmos são imunes à **dispersão** devido ao raio do seu núcleo ser tão pequeno) e, portanto, permite **taxas de dados altas**, até porque o **HC** é o fim do **Backbone**, ou seja, é ele que fica responsável pelo piso.
+  A partir do **HC**, utilizei apenas cabos de cobre **CAT6** e cabos de cobre **CAT7** na distribuição do piso. Foram utilizados, respetivamente, cabos **CAT7** entre o **HC** e os 2 **APs** e, também, entre a ligação do **HC** e os 5 **CPs**. Os cabos **CAT6** foram utilizados entre os **CPs** e os **outlets**.
+
+
+* Achei pertinente utilizar cabos **CAT7** entre o **HC** e os **APs** representados no sketch, pois este permite um **alto nível de tráfego de dados**.
+
+
+* Devido às paredes de betão armado deste edifício, temos de ter em consideração que o raio de alcance de cada **AP** é reduzido por volta de 10-20 metros, o que faz com que sejam necessários **2 APs** no mesmo piso para ficar completamente coberto por ‘wireless’.
+
+
+* De forma a alcançar os **outlets** que se encontram no meio das salas, é utilizada calha para esconder e organizar os cabos, sendo esta colada ao chão (e, caso necessário, podem existir tomadas elétricas nesta mesma calha);
+
+
+* Os **APs** foram distribuídos de modo a cobrir o máximo espaço possível com ‘wireless’ do piso 1 e, possivelmente, entrada e arredores.
+  No sketch do piso 1, os **APs** encontram-se colocados de forma simétrica relativamente aos do piso 0, possibilitando, assim, o máximo de cobertura possível com apenas 4 **APs** no total (todo o edifício).
+
+
+* Para a alimentação dos **APs**, o cabo **CAT7** irá utilizar a tecnologia **PoE** (Power over Ethernet). Irão ser utilizados **Power Injectors** para permitir ao cabo o transporte de energia elétrica. Estes dispositivos irão ser colocados na saída do **HC**, para alimentar a ligação.
+
+
+* Todos os **patch cords** seguem a regra de terem um comprimento entre **0,5 e 5 metros**.
+
+
+* Na maioria das salas vão existir cabos a percorrer calhas que se encontram no teto falso, o qual cobre por completo todo o andar.
+
+
+## **Cálculos e finais observações**
+
+* Para determinar o número de outlets necessários para cada divisão, baseei-me na seguinte regra: **"Os padrões de cabeamento estruturado especificam um mínimo de duas saídas por área de trabalho, também duas saídas para cada 10 metros quadrados de área. Portanto, para uma área de trabalho acima de 10 m^2, quatro saídas devem estar disponíveis."**.
+
+
+* Na distribuição dos outlets de forma estruturada, segui a seguinte regra: **"A localização das tomadas dentro da área de trabalho deve ser tal que o equipamento do usuário final
+  está ao alcance usando os patch cords de até cinco metros de comprimento e também fornecem
+  flexibilidade para que os usuários possam mover os seus equipamentos. Onde quer que o usuário
+  equipamento é, deve haver sempre uma tomada a menos de três metros de distância."**.
+
+
+* Em relação à redundância de cabos do backbone, segui e implementei esta regra: **"Cada conexão de backbone deve ser um conjunto de vários cabos paralelos. Este conjunto
+  de vários cabos pode ser usado de várias maneiras:
+  Use um único, se algum dia falhar, o operador pode alternar para outro
+  Isso é chamado de failover (neste caso, failover manual).
+  O mesmo de antes, mas automático. Usando os protocolos apropriados, a camada 2
+  (comutação) e os dispositivos de camada 3 (roteamento) detectam se um cabo está falhando e
+  alternar automaticamente para outro.
+  O mesmo que antes, mas todos os cabos alternativos são usados ao mesmo tempo para
+  transmitir dados com balanceamento de carga. Isso não é mais chamado de failover, mas se um
+  cabo falhar, ele não será mais usado."**. Ou até mesmo, a seguinte informação que consta na PL1: **"Conexões redundantes de cabos de backbone são desejáveis, elas fornecem tolerância a falhas (failover) e também podem
+  ser usadas para aumentar a largura de banda (balanceamento de carga de rede). No que diz respeito a cabos redundantes, estes
+  recursos podem ser habilitados posteriormente nos switches da camada dois (Spanning Tree Protocol e Link Aggregation
+  Control Protocol) ou nos roteadores da camada três (Dynamic Routing Protocols)."**.
+
+
+* Em relação aos **TEs**, segui tanto esta regra: **"Each cross-connect will have at least one
+  telecommunication enclosure. Rack enclosures vertical size is measured in
+  U rack units (1.75’’/44.45 mm). Typical CAT7 24 ports patch panels have 1U
+  size. Defining the enclosure size reflects what we already know: the patch
+  panels that will be fitted there, but that’s not enough, active equipment will
+  also be placed there."**, como também: **"One thing to bear in mind is that these enclosures will house not
+  only the wiring termination hardware but also active equipment
+  that is not part of the cabling system itself like switches, routers,
+  servers, UPS (Uninterruptible Power Supply), etc.
+  The exact size of telecommunications enclosures cannot be derived from the
+  cabling system only, it must also take in account space for other hardware.
+  Also, an up to 50% oversizing is wise to accommodate future upgrades."**.
+
+
+* Para além dos ficheiros *.png* disponibilizados dos sketches do piso 0 e do piso 1, também foi disponibilizado o seu respetivo ficheiro *.svg*, no entanto, este revelou alguns problemas de formatação no momento em que foi exportado, por isso optei por utilizar os ficheiros *.png* na apresentação do markdown.
