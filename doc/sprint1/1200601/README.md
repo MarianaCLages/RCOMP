@@ -1,7 +1,7 @@
-#RCOMP 2021-2022 Project - Sprint 1 - Member 1200601 folder
+# RCOMP 2021-2022 Project - Sprint 1 - Member 1200601 folder
 
 
-#Introdução
+# Introdução
 
 Este projeto tem como objetivo criar uma estrutura de cabeamento em cinco
 edifícios, cada edifícios está associado a um número. A equipa decidiu que cada membro ficaria
@@ -16,7 +16,7 @@ Também se é mostrado os cabos situados a baixo da terra para mostrar a conexã
 
 
 
-#Edifício 3
+# Edifício 3
 
 O edifício 3 tem uma área de 400 metros quadrados e tem dois pisos, sendo que o rés do chão tem 11 salas sendo que
 duas delas são casas de banhos, os professores envolvidos neste projeto informaram-nos
@@ -25,7 +25,7 @@ O piso 1 tem 12 salas sendo que duas também são casas de banho, a mesma regra 
 também se aplica aqui.
 
 
-#Cabeamento do Rés-do-chão
+# Cabeamento do Rés-do-chão
 
 Começemos por apresentar a planta do rés do chão e o seu respetivo cabeamento:
 
