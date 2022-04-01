@@ -20,14 +20,16 @@ RCOMP 2021-2022 Project - Sprint 2 planning
   * **IPv4 address space to be used:** 172.17.168.0/21
   * **ISP router IPv4 node address:** 15.203.48.66/30
 
-  * **The naming of the routers will follow the following structure:** Router_[BuildingNumber]
-  * **The naming of the switches (ICs and HCs) will follow the following structure:** Switch_[SwitchType]\_[BuildingNumber]_[FloorNumber]
-  * **The naming of the switches (CPs) will follow the following structure:** Switch_[SwitchType]\_[BuildingNumber]\_[FloorNumber]_[RoomNumber]
+  * **The naming of the servers will follow the following structure:** Server_B[BuildingNumber]
+  * **The naming of the routers will follow the following structure:** Router_B[BuildingNumber]
+  * **The naming of the switches (MCs) will follow the following structure:** Switch_MC_B[BuildingNumber]
+  * **The naming of the switches (ICs and HCs) will follow the following structure:** Switch_[SwitchType]\_B[BuildingNumber]_F[FloorNumber]
+  * **The naming of the switches (CPs) will follow the following structure:** Switch_CP_B[BuildingNumber]\_F[FloorNumber]_[SwitchNumber]
 
-        [BuildingNumber] - Número identificador de cada edifício (1 a 5).
-        [SwitchType] - Tipo do switch (IC, HC, CP).
-        [FloorNumber] - Número identificador de cada piso (Floor zero = F0 ou Floor one = F1).
-        [RoomNumber] - Número identificador de cada sala.
+        [BuildingNumber] - Identifier number of each building (1 to 5)
+        [SwitchType] - The switch type (IC or HC)
+        [FloorNumber] - Identifier number of each floor (floor zero = 0 or floor one = 1)
+        [SwitchNumber] - Identifier number of each switch (starting from 1, ascending order)
 
 
 | Building     | IPv4 Networks |
