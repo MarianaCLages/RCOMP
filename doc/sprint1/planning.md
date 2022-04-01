@@ -5,7 +5,7 @@
 # 1. Sprint's backlog
 
 | Task  | Task Description                                                                              |
-| ----- | --------------------------------------------------------------------------------------------- |
+|-------|-----------------------------------------------------------------------------------------------|
 | T.1.1 | Development of a structured cabling project for building 1, encompassing the campus backbone. |
 | T.1.2 | Development of a structured cabling project for building 2.                                   |
 | T.1.3 | Development of a structured cabling project for building 3.                                   |
