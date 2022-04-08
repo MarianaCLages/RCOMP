@@ -14,12 +14,12 @@ RCOMP 2021-2022 Project - Sprint 2 planning
 # 2. Technical decisions and coordination #
 
   * **Packet Tracer version:** 8.1.1.0022
-  * **Backbone cable type:** Optic fibre
+  * **Backbone cable type:** Optic fibre (multimode)
   * **VTP domain name:** rc22djg1
+  * **Default VLAN ID:** 1
   * **VLAN IDs range:** 365 - 395
   * **IPv4 address space to be used:** 172.17.168.0/21
   * **ISP router IPv4 node address:** 15.203.48.66/30
-
 
   * The **naming of the servers** will follow the following structure: Server_B[BuildingNumber]
   * The **naming of the routers** will follow the following structure: Router_B[BuildingNumber]
@@ -38,37 +38,36 @@ RCOMP 2021-2022 Project - Sprint 2 planning
           [ID] - Identifier number of each device (starting from 1, ascending order)
 
 
-| Building     | IPv4 Networks |
-|--------------|---------------|
-| 1 + Backbone |               |
-| 2            |               |
-| 3            |               |
-| 4            |               |
+  * In order to have functional laptop via wireless, and smartphones aswell, we decided to configure a DHCP Pool in each building.
 
 
-| VLAN ID | VLAN Name |
-|---------|-----------|
-| 365     | backbone  |
-| 366     | GF_B1     |
-| 367     | FF_B1     |
-| 368     | Wifi_B1   |
-| 369     | DMZ_B1    |
-| 370     | VoIP_B1   |
-| 371     | GF_B2     |
-| 372     | FF_B2     |
-| 373     | Wifi_B2   |
-| 374     | DMZ_B2    |
-| 375     | VoIP_B2   |
-| 376     | GF_B3     |
-| 377     | FF_B3     |
-| 378     | Wifi_B3   |
-| 379     | DMZ_B3    |
-| 380     | VoIP_B3   |
-| 381     | GF_B4     |
-| 382     | FF_B4     |
-| 383     | Wifi_B4   |
-| 384     | DMZ_B4    |
-| 385     | VoIP_B4   |
+
+
+###*VLANs and respective Network*
+
+| VLAN ID | VLAN Name | IPv4 Networks |
+|---------|-----------| --------------|
+| BackBone | 365    | 172.17.168.0/25   |
+| GF_B1    | 366    | 172.17.171.0/26   |
+| FF_B1    | 367    | 172.17.170.0/25   |
+| Wifi_B1  | 368    | 172.17.168.128/25 |
+| DMZ_B1   | 369    | 172.17.169.128/25 |
+| VoIP_B1  | 370    | 172.17.172.64/26  |
+| GF_B2    | 371    | 172.17.173.0/27   |
+| FF_B2    | 372    | 172.17.171.192/26 |
+| Wifi_B2  | 373    | 172.17.169.0/25   |
+| DMZ_B2   | 374    | 172.17.173.64/28  |
+| VoIP_B2  | 375    | 172.17.173.96/28  |
+| GF_B3    | 376    | 172.17.172.128/26 |
+| FF_B3    | 377    | 172.17.172.0/26   |
+| Wifi_B3  | 378    | 172.17.171.64/26  |
+| DMZ_B3   | 379    | 172.17.172.192/27 |
+| VoIP_B3  | 380    | 172.17.173.32/27  |
+| GF_B4    | 381    | 172.17.172.224/27 |
+| FF_B4    | 382    | 172.17.171.128/26 |
+| Wifi_B4  | 383    | 172.17.170.128/25 |
+| DMZ_B4   | 384    | 172.17.173.128/28 |
+| VoIP_B4  | 385    | 172.17.173.112/28 |
 | 386     |           |
 | 387     |           |
 | 388     |           |
@@ -80,11 +79,23 @@ RCOMP 2021-2022 Project - Sprint 2 planning
 | 394     |           |
 | 395     |           |
 
+### *Note:*
+
+* Since our group only has 4 elements, there is no need to configure all the other available VLANs.
+
+###*Buildings and respective backbone IPv4 Address*
+
+| Building     | IPv4 Networks |
+|--------------|---------------|
+| 1            | 172.17.168.1  |
+| 2            |   172.17.168.2|
+| 3            | 172.17.168.3  |
+| 4            |  172.17.168.4 |
 
 # 3. Subtasks assignment #
 
-  * 1200601 - Development of a layer two and layer three Packet Tracer simulation for building three, encompassing the campus backbone.
-  * 1200902 - Development of a layer two and layer three Packet Tracer simulation for building two, encompassing the campus backbone.
-  * 1200920 - Development of a layer two and layer three Packet Tracer simulation for building one, encompassing the campus backbone. Integration of every member’s Packet Tracer simulation into a single simulation.
-  * 1201487 - Development of a layer two and layer three Packet Tracer simulation for building four, encompassing the campus backbone.
+  * **1200601** - Development of a layer two and layer three Packet Tracer simulation for **building three**, encompassing the campus backbone.
+  * **1200902** - Development of a layer two and layer three Packet Tracer simulation for **building two**, encompassing the campus backbone.
+  * **1200920** - Development of a layer two and layer three Packet Tracer simulation for **building one**, encompassing the campus backbone. Integration of every member’s Packet Tracer simulation into a single simulation.
+  * **1201487** - Development of a layer two and layer three Packet Tracer simulation for **building four**, encompassing the campus backbone.
 

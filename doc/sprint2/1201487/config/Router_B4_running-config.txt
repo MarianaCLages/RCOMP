@@ -1,0 +1,122 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname RouterB4
+!
+!
+!
+!
+!
+ip dhcp pool Wifi_B4
+ network 172.17.170.128 255.255.255.128
+ default-router 172.17.170.129
+ domain-name wr
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017UOQA-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 172.17.168.1 255.255.255.128
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.1
+ encapsulation dot1Q 383
+ ip address 172.17.170.129 255.255.255.128
+!
+interface FastEthernet0/0.2
+ encapsulation dot1Q 382
+ ip address 172.17.171.129 255.255.255.192
+!
+interface FastEthernet0/0.3
+ encapsulation dot1Q 381
+ ip address 172.17.172.225 255.255.255.224
+!
+interface FastEthernet0/0.4
+ encapsulation dot1Q 385
+ ip address 172.17.173.113 255.255.255.240
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/3/0
+ switchport mode access
+ switchport nonegotiate
+!
+interface FastEthernet0/3/1
+ switchport mode access
+ switchport nonegotiate
+!
+interface FastEthernet0/3/2
+ switchport mode access
+ switchport nonegotiate
+!
+interface FastEthernet0/3/3
+ switchport mode access
+ switchport nonegotiate
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan383
+ mac-address 0002.1668.9e01
+ no ip address
+!
+interface Vlan384
+ mac-address 0002.1668.9e02
+ ip address 172.17.173.129 255.255.255.240
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
