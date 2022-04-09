@@ -64,9 +64,11 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 
 ## Routing table
 
-| Network   | 	Mask   | Next hop     |
-|-----------|---------|--------------|
-| 0.0.0.0/0 | 0.0.0.0 | 172.17.168.1 |
+### Router B3
+| Network        | Mask            | Next Hop       |
+|----------------|-----------------|----------------|
+| 0.0.0.0        | 0.0.0.0         | 172.17.168.1   |
+
 
 ##SubInterfaces
 
@@ -77,16 +79,24 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 | WIFI_B3   | 378     | FastEthernet1/0.1                          | 172.17.171.65  | 255.255.255.192 |
 | VoIP_B3   | 380     | FastEthernet1/0.5                          | 172.17.173.33  | 255.255.255.224 |
 
-* O router apresenta um default route, conseguido através do endereço **0.0.0.0/0**, assim, este redireciona, quando tráfego relativo a **IPs desconhecidos**, para o **router do ISP**.
+###
+
+* O router apresenta um default route, conseguido através do endereço **0.0.0.0/0**, assim, este redireciona, quando tráfego relativo a **IPs desconhecidos**, para o **Top Router**.
+
 
 * A simulação permite a comunicação entre **VLANs** (utilizando **Default Gateways**). Cada **router** encaminha qualquer endereço que não conhece para o **router** presente no MC e este encaminha para cada edifício, caso este esteja compreeendido entre os endereços do **campus**. No caso de não estar, dá forward para o **ISP** através de um **DSL Modem** (sendo esta solução representada apenas no ficheiro campus.pkt, localizado na pasta relativa ao Edifício 1).
 
+
 * Todas as ligações entre switches foram alteradas para se apresentarem em **trunk mode**, o **VTP domain** foi alterado para o domínio fornecido no enunciado (**rc22djg1**) e o switch do MC foi configurado para estar em **modo server**, sendo os restantes switches configurados para estarem no **modo client**. Assim, permitimos que todos os **switches tenham todas as VLANs na sua VLAN database** configuradas para o edifício e campus (VLAN IDs no **intervalo de 365 – 395** e descritas no ficheiro planning.md).
+
 
 * Na configuração deste edifício, podemos verificar tanto o IC, bem como os dois HCs e os seis CPs, estão representados por switches **"PT-Empty"**, tal como mencionado no enunciado.
 
+
 * O modelo do router utilizado foi o *2811*, tal como mencionado no enunciado do projeto.
 
+
 * Por outro lado, conectados aos APs, estão laptops e smartphones preparados e ligados através de WiFi à VLAN referente à WiFi Network do Edifício 4 (VLAN ID: 383).
+
 
 * SSIDs e canais foram configurados nos Access Points (também representados nas imagens).
