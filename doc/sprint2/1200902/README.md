@@ -51,7 +51,7 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200902 folder
 | BACKBONE  | 365     | 120             | 172.17.168.0        | 255.255.255.128 | 172.17.168.0-127   | 172.17.168.0    | 172.17.168.127    | 172.17.168.1             | 172.17.168.126          |
 | GF_B2     | 371     | 25              | 172.17.173.0        | 255.255.255.224 | 172.17.173.0-31    | 172.17.173.0    | 172.17.173.31     | 172.17.173.1             | 172.17.173.30           |
 | FF_B2     | 372     | 50              | 172.17.171.192      | 255.255.255.192 | 172.17.171.192-255 | 172.17.171.192  | 172.17.171.255    | 172.17.171.193           | 172.17.171.254          |
-| Wifi_B2   | 373     | 120             | 172.17.169.0        | 255.255.255.128 | 172.17.169.0-127   | 172.17.169.0    | 172.17.169.127    | 172.17.169.1             | 172.17.169.126          |
+| WIFI_B2   | 373     | 120             | 172.17.169.0        | 255.255.255.128 | 172.17.169.0-127   | 172.17.169.0    | 172.17.169.127    | 172.17.169.1             | 172.17.169.126          |
 | DMZ_B2    | 374     | 12              | 172.17.173.64       | 255.255.255.240 | 172.17.173.64-79   | 172.17.173.64   | 172.17.173.79     | 172.17.173.65            | 172.17.173.78           |
 | VoIP_B2   | 375     | 12              | 172.17.173.96       | 255.255.255.240 | 172.17.173.96-111  | 172.17.173.96   | 172.17.173.111    | 172.17.173.97            | 172.17.173.110          |
 
@@ -79,4 +79,4 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200902 folder
 
 * SSIDs e canais foram configurados nos Access Points (também representados nas imagens).
 
-* Tal como mencionado previamente, o DHCP foi configurado numa Pool "WIFI_B2" permitindo, assim, a atribuição automática de enderenços IPv4 a todos os end nodes que tenham o DCHP ligado.
+* Tal como mencionado previamente, o DHCP foi configurado numa Pool "Wifi_B2" permitindo, assim, a atribuição automática de enderenços IPv4 a todos os end nodes que tenham o DCHP ligado.
