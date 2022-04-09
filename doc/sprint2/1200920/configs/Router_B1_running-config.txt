@@ -1,0 +1,106 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017P0UI-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 172.17.169.129 255.255.255.128
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.366
+ encapsulation dot1Q 366
+ ip address 172.17.171.1 255.255.255.192
+!
+interface FastEthernet0/0.367
+ encapsulation dot1Q 367
+ ip address 172.17.170.1 255.255.255.128
+!
+interface FastEthernet0/0.368
+ encapsulation dot1Q 368
+ ip address 172.17.168.129 255.255.255.128
+!
+interface FastEthernet0/0.369
+ encapsulation dot1Q 369
+ no ip address
+!
+interface FastEthernet0/0.370
+ encapsulation dot1Q 370
+ ip address 172.17.172.129 255.255.255.192
+!
+interface FastEthernet0/1
+ ip address 172.17.168.5 255.255.255.128
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 172.17.168.1 
+ip route 172.17.171.0 255.255.255.192 172.17.168.1 
+ip route 172.17.170.0 255.255.255.128 172.17.168.1 
+ip route 172.17.168.128 255.255.255.128 172.17.168.1 
+ip route 172.17.169.128 255.255.255.128 172.17.168.1 
+ip route 172.17.168.0 255.255.255.128 172.17.171.0 
+ip route 172.17.168.0 255.255.255.128 172.17.170.0 
+ip route 172.17.168.0 255.255.255.128 172.17.168.128 
+ip route 172.17.168.0 255.255.255.128 172.17.169.128 
+ip route 172.17.168.0 255.255.255.128 172.17.172.64 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
