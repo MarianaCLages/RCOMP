@@ -1,0 +1,105 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+ip dhcp pool oky
+ network 172.17.171.64 255.255.255.192
+ domain-name wr
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX10177714-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface FastEthernet1/0
+ no ip address
+!
+interface FastEthernet1/0.1
+ encapsulation dot1Q 378
+ ip address 172.17.171.65 255.255.255.192
+!
+interface FastEthernet1/0.2
+ encapsulation dot1Q 377
+ ip address 172.17.172.1 255.255.255.192
+!
+interface FastEthernet1/0.3
+ encapsulation dot1Q 376
+ ip address 172.17.172.129 255.255.255.192
+!
+interface FastEthernet1/0.5
+ encapsulation dot1Q 380
+ ip address 172.17.173.33 255.255.255.224
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan379
+ mac-address 0060.707e.1301
+ ip address 172.17.172.193 255.255.255.224
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
