@@ -37,6 +37,7 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1201487 folder
 
 ### *Informação sobre o edifício:*
 
+- Backbone: 120 nodes
 - End user outlets on the ground floor: 28 nodes
 - End user outlets on floor one: 55 nodes
 - Wi-Fi network: 70 nodes
@@ -64,7 +65,6 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1201487 folder
 | 0.0.0.0        | 0.0.0.0         | 172.17.168.1   |
 
 
-
 ## Explicações e observações
 
 * O router apresenta um default route, conseguido através do endereço **0.0.0.0/0**, assim, este redireciona, quando tráfego relativo a **IPs desconhecidos**, para o **Top Router**.
@@ -89,3 +89,9 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1201487 folder
 
 
 * Tal como mencionado previamente, o DHCP foi configurado numa Pool "WIFI_B4" permitindo, assim, a atribuição automática de enderenços IPv4 a todos os end nodes que tenham o DCHP ligado.
+
+
+* A **árvore dos endereços** e a sua respetiva legenda encontram-se, em formato **jpg**, na pasta de cada elemento do grupo.
+
+
+* A **simulação de rede do campus** encontra-se na pasta do sprint master (1200902) e do elemento que está encarregue do edifício 1 (1200920).

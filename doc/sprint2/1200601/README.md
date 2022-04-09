@@ -7,17 +7,7 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 
 ###
 
-
-## Information
-
-- End user outlets on the ground floor: 35 nodes
-- End user outlets on floor one: 50 nodes
-- Wi-Fi network: 55 nodes
-- Local servers and administration workstations (DMZ): 28 nodes
-- VoIP (IP-phones): 25 nodes
-- Total Nodes: 193 nodes
-
-### *Simulação total do edifício*
+## *Simulação total do edifício*
 
 ![B3_Total](Total.png)
 
@@ -25,10 +15,10 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 
 ![B3_GF](Floor0.PNG)
 
-
 ### *Piso 1*
 
 ![B3_FF](Floor1.PNG)
+
 
 ### *Notas:*
 
@@ -42,13 +32,13 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 
 ## Informação do edíficio
 
+- Backbone: 120 nodes
 - End user outlets on the ground floor: 35 nodes
 - End user outlets on floor one: 50 nodes
 - Wi-Fi network: 55 nodes
 - Local servers and administration workstations (DMZ): 28 nodes
 - VoIP (IP-phones): 25 nodes
-- Total Nodes: 193 nodes
-
+- Total nodes: 193 nodes
 
 
 ## Distribuição da rede
@@ -62,6 +52,7 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 | DMZ_B3    | 379     | 28              | 172.17.169.192      | 255.255.255.224 | 172.17.169.192-220 | 172.17.169.193  | 172.17.169.192    | 172.17.169.194           | 172.17.169.219          |
 | VoIP_B3   | 380     | 25              | 172.17.173.32       | 255.255.255.224 | 172.17.173.32-57   | 172.17.173.33   | 172.17.173.32     | 172.17.173.34            | 172.17.173.56           |
 
+
 ## Routing table
 
 ### Router B3
@@ -70,7 +61,7 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 | 0.0.0.0        | 0.0.0.0         | 172.17.168.1   |
 
 
-##SubInterfaces
+## SubInterfaces
 
 | VLAN NAME | VLAN ID | SUBINTERFACE                               | IP ADDRESS     | MASK            |
 |:----------|:--------|:-------------------------------------------|:---------------|:----------------|
@@ -100,3 +91,9 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 
 
 * SSIDs e canais foram configurados nos Access Points (também representados nas imagens).
+
+
+* A **árvore dos endereços** e a sua respetiva legenda encontram-se, em formato **jpg**, na pasta de cada elemento do grupo.
+
+
+* A **simulação de rede do campus** encontra-se na pasta do sprint master (1200902) e do elemento que está encarregue do edifício 1 (1200920).
