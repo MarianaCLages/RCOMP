@@ -7,15 +7,13 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1201487 folder
 
 ###
 
-### *Simulação total do edifício*
+## *Simulação total do edifício*
 
 ![Building4](Building4.png)
-
 
 ### *Piso 0*
 
 ![Building4_ground_floor](Building4_ground_floor.png)
-
 
 ### *Piso 1*
 
