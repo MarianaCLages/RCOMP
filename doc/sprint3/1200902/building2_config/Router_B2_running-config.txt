@@ -1,0 +1,103 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname RouterB2
+!
+!
+!
+!
+!
+ip dhcp pool Wifi_B2
+ network 172.17.169.0 255.255.255.128
+ default-router 172.17.169.1
+ domain-name wr
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017A0XV-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 172.17.168.2 255.255.255.128
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.1
+ encapsulation dot1Q 371
+ ip address 172.17.173.1 255.255.255.224
+!
+interface FastEthernet0/0.2
+ encapsulation dot1Q 372
+ ip address 172.17.171.193 255.255.255.192
+!
+interface FastEthernet0/0.3
+ encapsulation dot1Q 373
+ ip address 172.17.169.1 255.255.255.128
+!
+interface FastEthernet0/0.4
+ encapsulation dot1Q 374
+ ip address 172.17.173.65 255.255.255.240
+!
+interface FastEthernet0/0.5
+ encapsulation dot1Q 375
+ ip address 172.17.173.97 255.255.255.240
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+

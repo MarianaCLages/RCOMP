@@ -1,0 +1,215 @@
+!
+version 15.1
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Router
+!
+!
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+!
+license udi pid CISCO2811/K9 sn FTX1017O5IE-
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 172.17.168.1 255.255.255.128
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.366
+ encapsulation dot1Q 366
+ ip address 172.17.171.1 255.255.255.192
+!
+interface FastEthernet0/0.367
+ encapsulation dot1Q 367
+ ip address 172.17.170.1 255.255.255.128
+!
+interface FastEthernet0/0.368
+ encapsulation dot1Q 368
+ ip address 172.17.168.129 255.255.255.128
+!
+interface FastEthernet0/0.369
+ encapsulation dot1Q 369
+ no ip address
+!
+interface FastEthernet0/0.370
+ encapsulation dot1Q 370
+ ip address 172.17.172.129 255.255.255.192
+!
+interface FastEthernet0/0.371
+ encapsulation dot1Q 371
+ ip address 172.17.173.1 255.255.255.224
+!
+interface FastEthernet0/0.372
+ encapsulation dot1Q 372
+ ip address 172.17.171.193 255.255.255.192
+!
+interface FastEthernet0/0.373
+ encapsulation dot1Q 373
+ ip address 172.17.169.1 255.255.255.128
+!
+interface FastEthernet0/0.374
+ encapsulation dot1Q 374
+ no ip address
+!
+interface FastEthernet0/0.375
+ encapsulation dot1Q 375
+ ip address 172.17.173.97 255.255.255.240
+!
+interface FastEthernet0/0.376
+ encapsulation dot1Q 376
+ no ip address
+!
+interface FastEthernet0/0.377
+ encapsulation dot1Q 377
+ ip address 172.17.172.1 255.255.255.192
+!
+interface FastEthernet0/0.378
+ encapsulation dot1Q 378
+ ip address 172.17.171.65 255.255.255.192
+!
+interface FastEthernet0/0.380
+ encapsulation dot1Q 380
+ ip address 172.17.173.33 255.255.255.224
+!
+interface FastEthernet0/0.381
+ encapsulation dot1Q 381
+ ip address 172.17.172.225 255.255.255.224
+!
+interface FastEthernet0/0.382
+ encapsulation dot1Q 382
+ ip address 172.17.171.129 255.255.255.192
+!
+interface FastEthernet0/0.383
+ encapsulation dot1Q 383
+ ip address 172.17.170.129 255.255.255.128
+!
+interface FastEthernet0/0.384
+ encapsulation dot1Q 384
+ no ip address
+!
+interface FastEthernet0/0.385
+ encapsulation dot1Q 385
+ ip address 172.17.173.113 255.255.255.240
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router rip
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 15.203.48.66 
+ip route 172.17.173.0 255.255.255.224 172.17.168.5 
+ip route 172.17.171.192 255.255.255.192 172.17.168.5 
+ip route 172.17.169.0 255.255.255.128 172.17.168.5 
+ip route 172.17.173.64 255.255.255.240 172.17.168.5 
+ip route 172.17.173.96 255.255.255.240 172.17.168.5 
+ip route 172.17.172.128 255.255.255.192 172.17.168.5 
+ip route 172.17.172.0 255.255.255.192 172.17.168.5 
+ip route 172.17.171.64 255.255.255.192 172.17.168.5 
+ip route 172.17.172.192 255.255.255.224 172.17.168.5 
+ip route 172.17.173.32 255.255.255.224 172.17.168.5 
+ip route 172.17.172.224 255.255.255.224 172.17.168.5 
+ip route 172.17.171.128 255.255.255.192 172.17.168.5 
+ip route 172.17.170.128 255.255.255.128 172.17.168.5 
+ip route 172.17.173.128 255.255.255.240 172.17.168.5 
+ip route 172.17.173.112 255.255.255.240 172.17.168.5 
+ip route 172.17.168.0 255.255.255.128 172.17.168.2 
+ip route 172.17.171.0 255.255.255.192 172.17.168.2 
+ip route 172.17.170.0 255.255.255.128 172.17.168.2 
+ip route 172.17.168.128 255.255.255.128 172.17.168.2 
+ip route 172.17.169.128 255.255.255.128 172.17.168.2 
+ip route 172.17.172.128 255.255.255.192 172.17.168.2 
+ip route 172.17.172.0 255.255.255.192 172.17.168.2 
+ip route 172.17.171.64 255.255.255.192 172.17.168.2 
+ip route 172.17.172.192 255.255.255.224 172.17.168.2 
+ip route 172.17.173.32 255.255.255.224 172.17.168.2 
+ip route 172.17.172.224 255.255.255.224 172.17.168.2 
+ip route 172.17.171.128 255.255.255.192 172.17.168.2 
+ip route 172.17.170.128 255.255.255.128 172.17.168.2 
+ip route 172.17.173.128 255.255.255.240 172.17.168.2 
+ip route 172.17.173.112 255.255.255.240 172.17.168.2 
+ip route 172.17.171.0 255.255.255.192 172.17.168.3 
+ip route 172.17.170.0 255.255.255.128 172.17.168.3 
+ip route 172.17.168.128 255.255.255.128 172.17.168.3 
+ip route 172.17.169.128 255.255.255.128 172.17.168.3 
+ip route 172.17.172.64 255.255.255.192 172.17.168.3 
+ip route 172.17.173.0 255.255.255.224 172.17.168.3 
+ip route 172.17.171.192 255.255.255.192 172.17.168.3 
+ip route 172.17.169.0 255.255.255.128 172.17.168.3 
+ip route 172.17.173.64 255.255.255.240 172.17.168.3 
+ip route 172.17.173.96 255.255.255.240 172.17.168.3 
+ip route 172.17.172.224 255.255.255.224 172.17.168.3 
+ip route 172.17.171.128 255.255.255.192 172.17.168.3 
+ip route 172.17.170.128 255.255.255.128 172.17.168.3 
+ip route 172.17.173.128 255.255.255.240 172.17.168.3 
+ip route 172.17.173.112 255.255.255.240 172.17.168.3 
+ip route 172.17.171.0 255.255.255.192 172.17.168.4 
+ip route 172.17.170.0 255.255.255.128 172.17.168.4 
+ip route 172.17.168.128 255.255.255.128 172.17.168.4 
+ip route 172.17.169.128 255.255.255.128 172.17.168.4 
+ip route 172.17.172.64 255.255.255.192 172.17.168.4 
+ip route 172.17.173.0 255.255.255.224 172.17.168.4 
+ip route 172.17.171.192 255.255.255.192 172.17.168.4 
+ip route 172.17.169.0 255.255.255.128 172.17.168.4 
+ip route 172.17.173.64 255.255.255.240 172.17.168.4 
+ip route 172.17.173.96 255.255.255.240 172.17.168.4 
+ip route 172.17.172.128 255.255.255.192 172.17.168.4 
+ip route 172.17.172.0 255.255.255.192 172.17.168.4 
+ip route 172.17.171.64 255.255.255.192 172.17.168.4 
+ip route 172.17.172.192 255.255.255.224 172.17.168.4 
+ip route 172.17.173.32 255.255.255.224 172.17.168.4 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+

@@ -1,9 +1,9 @@
 RCOMP 2021-2022 Project - Sprint 3 planning
 ===========================================
-### Sprint master: 3333333 ###
+### Sprint master: 1200601
 (This file is to be created/edited by the sprint master only)
 # 1. Sprint's backlog #
-(Copy here a summary of the provided sprint's backlog)
+(Copy here a summary of th  e provided sprint's backlog)
 # 2. Technical decisions and coordination #
 In this section, all technical decisions taken in the planning meeting should be mentioned. 		Most importantly, all technical decisions impacting on the subtasks implementation must be settled on this 		meeting and specified here.
 
