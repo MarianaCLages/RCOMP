@@ -36,11 +36,11 @@
 
 ![Building1](Building1.png)
 
-### *Piso 0*
+### *Floor 0*
 
 ![Building1_ground_floor](Building1_ground_floor.png)
 
-### *Piso 1*
+### *Floor 1*
 
 ![Building1_first_floor](Building1_first_floor.png)
 
@@ -56,6 +56,10 @@
 * Para uma melhor compreensão, foi anotado, debaixo dos end nodes, os seus respetivos endereços, exceto nos portáteis e telemóveis, visto que estes têm o **DHCP** ativado. Estão, também, descritas as informações relativas aos **switches**.
 
 * Todos os configs relacionados ao **router** e os vários **switches** encontram-se na pasta "config", por uma questão de melhor organização dos ficheiros.
+
+* A **árvore dos endereços** e a sua respetiva legenda encontram-se, em formato **jpg**, na pasta de cada elemento do grupo.
+
+* A **simulação de rede do campus** encontra-se na pasta do sprint master (1200902) e do elemento que está encarregue do edifício 1 (1200920).
 
 
 ### *Informação sobre o edifício:*
@@ -79,6 +83,17 @@
 | WIFI_B1   | 368     | 120             | 172.17.168.128      | 255.255.255.128 | 172.17.168.128-255 | 172.17.168.128  | 172.17.168.255    | 172.17.168.129           | 172.17.168.255          |
 | DMZ_B1    | 369     | 100             | 172.17.169.128      | 255.255.255.128 | 172.17.169.128-255 | 172.17.169.128  | 172.17.169.255    | 172.17.169.129           | 172.17.169.255          |
 | VoIP_B1   | 370     | 40              | 172.17.172.64       | 255.255.255.128 | 172.17.172.64-127  | 172.17.172.64   | 172.17.172.127    | 172.17.172.65            | 172.17.172.127          |
+
+
+## SubInterfaces
+
+| VLAN NAME | VLAN ID | SUBINTERFACE        | IP ADDRESS     | MASK            |
+|:----------|:--------|:--------------------|:---------------|:----------------|
+| GF_B1     | 366     | FastEthernet1/0.366 | 172.17.171.0   | 255.255.255.192 |
+| FF_B1     | 367     | FastEthernet1/0.367 | 172.17.170.0   | 255.255.255.128 |
+| WIFI_B1   | 368     | FastEthernet1/0.368 | 172.17.168.128 | 255.255.255.128 |
+| DMZ_B1    | 369     | FastEthernet1/0.369 | 172.17.169.128 | 255.255.255.128 |
+| VoIP_B1   | 370     | FastEthernet1/0.370 | 172.17.172.64  | 255.255.255.128 |
 
 
 ## Routing table
@@ -117,7 +132,7 @@
 
 ###
 
-### Explicações e observações
+## Explicações e observações
 
 * O router apresenta um default route, conseguido através do endereço **0.0.0.0/0**, assim, este redireciona, quando tráfego relativo a **IPs desconhecidos**, para o **Top Router**.
 
@@ -141,9 +156,3 @@
 
 
 * Tal como mencionado previamente, o DHCP foi configurado numa Pool "WIFI_B1" permitindo, assim, a atribuição automática de enderenços IPv4 a todos os end nodes que tenham o DCHP ligado.
-
-
-* A **árvore dos endereços** e a sua respetiva legenda encontram-se, em formato **jpg**, na pasta de cada elemento do grupo.
-
-
-* A **simulação de rede do campus** encontra-se na pasta do sprint master (1200902) e do elemento que está encarregue do edifício 1 (1200920).

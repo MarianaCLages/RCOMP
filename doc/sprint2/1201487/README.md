@@ -24,13 +24,17 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1201487 folder
 
 * Uma vez que não era necessário neste sprint, não foi configurado **DNS** utilizando um servidor próprio para tal.
 
-* Foi configurada uma DHCP Pool no router, chamada **"Wifi_B2"**, que está encarregue de atribuir enderenços **IPv4** a todos os dipositivos que se liguem de forma wireless à rede.
+* Foi configurada uma DHCP Pool no router, chamada **"Wifi_B4"**, que está encarregue de atribuir enderenços **IPv4** a todos os dipositivos que se liguem de forma wireless à rede.
 
 * Os **VoIP phones** não foram configurados. Apenas se desligou as VLANs nas portas entre **switch** e **VoIP phone**.
 
 * Para uma melhor compreensão, foi anotado, debaixo dos end nodes, os seus respetivos endereços, exceto nos portáteis e telemóveis, uma vez que estes têm o **DHCP** ativado. Estão, também, descritas as informações relativas aos **switches**.
 
 * Todos os configs relacionados ao **router** e os vários **switches** encontram-se na pasta "config", por uma questão de melhor organização dos ficheiros.
+
+* A **árvore dos endereços** e a sua respetiva legenda encontram-se, em formato **jpg**, na pasta de cada elemento do grupo.
+
+* A **simulação de rede do campus** encontra-se na pasta do sprint master (1200902) e do elemento que está encarregue do edifício 1 (1200920).
 
 
 ### *Informação sobre o edifício:*
@@ -53,6 +57,17 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1201487 folder
 | WIFI_B4   | 383     | 70              | 172.17.170.128      | 255.255.255.128 | 172.17.170.128-255 | 172.17.170.128  | 172.17.170.255    | 172.17.170.129           | 172.17.170.254          |
 | DMZ_B4    | 384     | 10              | 172.17.173.128      | 255.255.255.240 | 172.17.173.128-143 | 172.17.173.128  | 172.17.173.143    | 172.17.173.129           | 172.17.173.142          |
 | VoIP_B4   | 385     | 12              | 172.17.173.112      | 255.255.255.240 | 172.17.173.112-127 | 172.17.173.112  | 172.17.173.127    | 172.17.173.113           | 172.17.173.126          |
+
+
+## SubInterfaces
+
+| VLAN NAME | VLAN ID | SUBINTERFACE      | IP ADDRESS     | MASK            |
+|:----------|:--------|:------------------|:---------------|:----------------|
+| GF_B4     | 381     | FastEthernet1/0.3 | 172.17.172.224 | 255.255.255.224 |
+| FF_B4     | 382     | FastEthernet1/0.2 | 172.17.171.128 | 255.255.255.192 |
+| WIFI_B4   | 383     | FastEthernet1/0.1 | 172.17.170.128 | 255.255.255.128 |
+| DMZ_B4    | 384     | FastEthernet1/0.5 | 172.17.173.128 | 255.255.255.240 |
+| VoIP_B4   | 385     | FastEthernet1/0.4 | 172.17.173.112 | 255.255.255.240 |
 
 
 ## Routing table
@@ -87,9 +102,3 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1201487 folder
 
 
 * Tal como mencionado previamente, o DHCP foi configurado numa Pool "WIFI_B4" permitindo, assim, a atribuição automática de enderenços IPv4 a todos os end nodes que tenham o DCHP ligado.
-
-
-* A **árvore dos endereços** e a sua respetiva legenda encontram-se, em formato **jpg**, na pasta de cada elemento do grupo.
-
-
-* A **simulação de rede do campus** encontra-se na pasta do sprint master (1200902) e do elemento que está encarregue do edifício 1 (1200920).
