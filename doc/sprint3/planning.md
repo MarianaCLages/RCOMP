@@ -28,26 +28,15 @@ device’s window click the export button on the Running Config, or the Startup 
 saved).**
 
 
-## 3. OSPF
 
-## DNS Domain
 
-One DNS domain is going to be established on each building.
-
-The team member in charge of building 1 will create a DNS domain name matching the team’s repository name (
-rcomp-21-22-cc-gn). This is going to be the highest-level domain, so it’s going to be used as if it was the DNS root
-domain.
-
-DNS name for the remaining members: **building-X.rcomp-21-22-cc-gn**
-
-With **X** replaced by the digit that identifies the building (i.e., 2, 3, 4, and 5).
 
 ### *Notes:*
 
 Since we are a team of four members a DNS for the fifth building won't be developed.
 
 
-## 4. VoIP
+##  VoIP
 
 ### Building 1
 
@@ -82,7 +71,18 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | 2      | 966555041 | 
 
 
-## 5. DNS Database
+## DNS Domain
+
+One DNS domain is going to be established on each building.
+
+The team member in charge of building 1 will create a DNS domain name matching the team’s repository name (
+rcomp-21-22-cc-gn). This is going to be the highest-level domain, so it’s going to be used as if it was the DNS root
+domain.
+
+DNS name for the remaining members: **building-X.rcomp-21-22-cc-gn**
+
+With **X** replaced by the digit that identifies the building (i.e., 2, 3, 4, and 5).
+
 
 ### Building 1
 

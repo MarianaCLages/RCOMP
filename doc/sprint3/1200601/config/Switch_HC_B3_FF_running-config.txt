@@ -17,27 +17,16 @@ spanning-tree extend system-id
 interface FastEthernet0/1
  switchport mode trunk
 !
-interface FastEthernet1/1
+interface FastEthernet6/1
  switchport mode trunk
 !
-interface FastEthernet2/1
-!
-interface FastEthernet3/1
-!
-interface GigabitEthernet4/1
- switchport mode trunk
-!
-interface GigabitEthernet5/1
- switchport mode trunk
-!
-interface GigabitEthernet6/1
- switchport access vlan 376
-!
-interface GigabitEthernet7/1
+interface FastEthernet7/1
+ switchport access vlan 378
 !
 interface FastEthernet8/1
 !
-interface FastEthernet9/1
+interface GigabitEthernet9/1
+ switchport mode trunk
 !
 interface Vlan1
  no ip address
