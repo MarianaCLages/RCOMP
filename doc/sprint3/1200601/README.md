@@ -31,7 +31,7 @@ RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 | 1      | 966555030 |
 | 2      | 966555031 | 
 
-## NAT
+## OSPF
 
 
 | Network-Adress | Network-Wildcard | Area Number |
