@@ -1,0 +1,142 @@
+BUILDING 1 - PHONE NUMBERS
+
+966555010
+966555011
+966555012
+966555013
+
+number 966555010
+number 966555011
+number 966555012
+number 966555013
+
+BUILDING 2 - PHONE NUMBERS
+
+966555020
+966555021
+
+number 966555020
+number 966555021
+
+BUILDING 3 - PHONE NUMBERS
+
+966555030
+966555031
+
+number 966555030
+number 966555031
+
+BUILDING 4 - PHONE NUMBERS
+
+966555040
+966555041
+
+number 966555040
+number 966555041
+
+-- Configuração Dial-Peer --
+
+dial-peer voice 1 voip - BUILDING 1 -> 2
+destination-pattern 966555...
+session target ipv4:172.17.168.2
+
+dial-peer voice 2 voip - BUILDING 2 -> 1
+destination-pattern 966555...
+session target ipv4:172.17.168.5
+
+--
+
+dial-peer voice 13 voip - BUILDING 1 -> 3
+destination-pattern 966555...
+session target ipv4:172.17.168.3
+
+dial-peer voice 31 voip - BUILDING 3 -> 1
+destination-pattern 966555...
+session target ipv4:172.17.168.5
+
+--
+
+dial-peer voice 14 voip - BUILDING 1 -> 4
+destination-pattern 966555...
+session target ipv4:172.17.168.4
+
+dial-peer voice 41 voip - BUILDING 4 -> 1
+destination-pattern 966555...
+session target ipv4:172.17.168.5
+
+--
+
+dial-peer voice 23 voip - BUILDING 2 -> 3
+destination-pattern 966555...
+session target ipv4:172.17.168.3
+
+--
+
+dial-peer voice 32 voip - BUILDING 3 -> 2
+destination-pattern 966555...
+session target ipv4:172.17.168.2
+
+--
+
+dial-peer voice 34 voip - BUILDING 3 -> 4
+destination-pattern 966555...
+session target ipv4:172.17.168.4
+
+--
+
+dial-peer voice 43 voip - BUILDING 4 -> 3
+destination-pattern 966555...
+session target ipv4:172.17.168.3
+
+--
+
+dial-peer voice 24 voip - BUILDING 2 -> 4
+destination-pattern 966555...
+session target ipv4:172.17.168.4
+
+--
+
+dial-peer voice 42 voip - BUILDING 4 -> 2
+destination-pattern 966555...
+session target ipv4:172.17.168.2
+
+--
+
+dial-peer voice 99 voip - BUILDING 1 - LOCAL
+destination-pattern 96655501.
+session target ipv4:172.17.168.5
+
+-- 
+
+dial-peer voice 98 voip - BUILDING 2 - LOCAL
+destination-pattern 96655502.
+session target ipv4:172.17.168.2
+
+--
+
+dial-peer voice 97 voip - BUIDLING 3 - LOCAL
+destination-pattern 96655503.
+session target ipv4:172.17.168.3
+
+--
+
+dial-peer voice 96 voip - BUIDLING 4 - LOCAL
+destination-pattern 96655504.
+session target ipv4:172.17.168.4
+
+
+--- Phones ---
+
+ephone 1 - 11
+ device-security-mode none
+ mac-address 0001.4347.C38A
+ type 7960
+ button 1:11
+
+ephone 2 - 12
+ device-security-mode none
+ mac-address 0001.43E8.ACB1
+ type 7960
+ button 1:12
+
+

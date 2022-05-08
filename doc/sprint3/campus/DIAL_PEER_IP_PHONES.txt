@@ -1,0 +1,17 @@
+
+dial-peer voice 2 voip
+ destination-pattern 96655501.
+ session target ipv4:172.17.168.5
+!
+dial-peer voice 23 voip
+ destination-pattern 96655503.
+ session target ipv4:172.17.168.3
+!
+dial-peer voice 24 voip
+ destination-pattern 96655504.
+ session target ipv4:172.17.168.4
+!
+dial-peer voice 98 voip
+ destination-pattern 96655502.
+ session target ipv4:172.17.168.2
+!

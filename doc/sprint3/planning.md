@@ -30,22 +30,52 @@ saved).**
 
 ## 3. OSPF
 
-## DNS Domain
+### Building 1
 
-One DNS domain is going to be established on each building.
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.171.0   | 0.0.0.63         | 1           |
+| 172.17.170.0   | 0.0.0.127        | 1           | 
+| 172.17.168.128 | 0.0.0.127        | 1           |
+| 172.17.169.128 | 0.0.0.127        | 1           | 
+| 172.17.172.64  | 0.0.0.63         | 1           | 
+| 172.17.168.0   | 0.0.0.127        | 0           |
 
-The team member in charge of building 1 will create a DNS domain name matching the team’s repository name (
-rcomp-21-22-cc-gn). This is going to be the highest-level domain, so it’s going to be used as if it was the DNS root
-domain.
 
-DNS name for the remaining members: **building-X.rcomp-21-22-cc-gn**
+### Building 2
 
-With **X** replaced by the digit that identifies the building (i.e., 2, 3, 4, and 5).
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.168.0   | 0.0.0.127        | 0           |
+| 172.17.173.0   | 0.0.0.31         | 2           | 
+| 172.17.171.192 | 0 0.0.63         | 2           |
+| 172.17.169.0   | 0.0.0.127        | 2           | 
+| 172.17.173.96  | 0.0.0.15         | 2           | 
+| 172.17.173.64  | 0.0.0.14         | 2           |
 
-### *Notes:*
 
-Since we are a team of four members a DNS for the fifth building won't be developed.
+### Building 3
 
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.168.0   | 0.0.0.127        | 0           |
+| 172.17.172.128 | 0.0.0.63         | 3           | 
+| 172.17.172.0   | 0 0.0.63         | 3           |
+| 172.17.171.64  | 0.0.0.63         | 3           | 
+| 172.17.172.192 | 0.0.0.31         | 3           | 
+| 172.17.173.32  | 0.0.0.31         | 3           |
+
+
+### Building 4
+
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.172.224 | 0.0.0.31         | 4           |
+| 172.17.171.128 | 0.0.0.63         | 4           | 
+| 172.17.170.128 | 0.0.0.127        | 4           |
+| 172.17.173.128 | 0.0.0.15         | 4           | 
+| 172.17.173.112 | 0.0.0.15         | 4           | 
+| 172.17.168.0   | 0.0.0.127        | 0           |
 
 ## 4. VoIP
 
@@ -83,6 +113,22 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 
 
 ## 5. DNS Database
+
+## DNS Domain
+
+One DNS domain is going to be established on each building.
+
+The team member in charge of building 1 will create a DNS domain name matching the team’s repository name (
+rcomp-21-22-cc-gn). This is going to be the highest-level domain, so it’s going to be used as if it was the DNS root
+domain.
+
+DNS name for the remaining members: **building-X.rcomp-21-22-cc-gn**
+
+With **X** replaced by the digit that identifies the building (i.e., 2, 3, 4, and 5).
+
+### *Notes:*
+
+Since we are a team of four members a DNS for the fifth building won't be developed.
 
 ### Building 1
 
@@ -134,55 +180,41 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 
 ## 6. NAT
 
-### Building 1
+In this sprint, NAT will be used as static for each server of each building, and will be used aswell in the TOP_ROUTER to make the connection between the ISP and the local network.
 
-| Network-Adress | Network-Wildcard | Area Number |
-|----------------|------------------|-------------|
-| 172.17.171.0   | 0.0.0.63         | 1           |
-| 172.17.170.0   | 0.0.0.127        | 1           | 
-| 172.17.168.128 | 0.0.0.127        | 1           |
-| 172.17.169.128 | 0.0.0.127        | 1           | 
-| 172.17.172.64  | 0.0.0.63         | 1           | 
-| 172.17.168.0   | 0.0.0.127        | 0           |
+##Static NAT
+###B1 Static NAT
+* ip nat inside source static tcp 172.17.177.130 53 15.203.48.69 53
+* ip nat inside source static udp 172.17.177.130 53 15.203.48.69 53
+* ip nat inside source static tcp 172.17.177.140 80 15.203.48.69 800
+* ip nat inside source static tcp 172.17.177.140 443 15.203.48.69 801
 
-
-### Building 2
-
-| Network-Adress | Network-Wildcard | Area Number |
-|----------------|------------------|-------------|
-| 172.17.168.0   | 0.0.0.127        | 0           |
-| 172.17.173.0   | 0.0.0.31         | 2           | 
-| 172.17.171.192 | 0 0.0.63         | 2           |
-| 172.17.169.0   | 0.0.0.127        | 2           | 
-| 172.17.173.96  | 0.0.0.15         | 2           | 
-| 172.17.173.64  | 0.0.0.14         | 2           |
+###B2 Static NAT
+* ip nat inside source static tcp 172.17.173.66 53 15.203.48.66 53
+* ip nat inside source static udp 172.17.173.66 53 15.203.48.66 53
+* ip nat inside source static tcp 172.17.173.65 80 15.203.48.66 807
+* ip nat inside source static tcp 172.17.173.65 443 15.203.48.66 808
 
 
-### Building 3
+###B3 Static NAT
+* ip nat inside source static tcp 172.17.172.132 53 15.203.48.66 53
+* ip nat inside source static udp 172.17.172.132 53 15.203.48.66 53
+* ip nat inside source static tcp 172.17.172.131 80 15.203.48.66 805
+* ip nat inside source static tcp 172.17.172.131 443 15.203.48.66 806
 
-| Network-Adress | Network-Wildcard | Area Number |
-|----------------|------------------|-------------|
-| 172.17.168.0   | 0.0.0.127        | 0           |
-| 172.17.172.128 | 0.0.0.63         | 3           | 
-| 172.17.172.0   | 0 0.0.63         | 3           |
-| 172.17.171.64  | 0.0.0.63         | 3           | 
-| 172.17.172.192 | 0.0.0.31         | 3           | 
-| 172.17.173.32  | 0.0.0.31         | 3           |
+###B4 Static NAT
+* ip nat inside source static tcp 172.17.173.131 53 15.203.48.66 53
+* ip nat inside source static udp 172.17.173.131 53 15.203.48.66 53
+* ip nat inside source static tcp 172.17.173.130 80 15.203.48.66 803
+* ip nat inside source static tcp 172.17.173.130 443 15.203.48.66 804
 
+## 7. Access Lists
+### Anti-Spoofing
 
-### Building 4
+In this specific scenario, we are going to apply Access Lists in order to prevent DOS or DDOS. In order to make this happen, we will have to define access lists with all the local networks in the system both permit and deny.
+Since it's a good practice to use the ACLs sooner in the network as possible, we are going to use the same in the TOP_ROUTER, where it connects the outside connection (ISP) with the local network using the NAT protocol.
 
-| Network-Adress | Network-Wildcard | Area Number |
-|----------------|------------------|-------------|
-| 172.17.172.224 | 0.0.0.31         | 4           |
-| 172.17.171.128 | 0.0.0.63         | 4           | 
-| 172.17.170.128 | 0.0.0.127        | 4           |
-| 172.17.173.128 | 0.0.0.15         | 4           | 
-| 172.17.173.112 | 0.0.0.15         | 4           | 
-| 172.17.168.0   | 0.0.0.127        | 0           |
-
-
-# 7. Subtasks assignment #
+# 8. Subtasks assignment #
 
 * **1200601** - Update the building3.pkt layer three Packet Tracer simulation from the previous sprint, to include the
   described features in this sprint for **building three**.

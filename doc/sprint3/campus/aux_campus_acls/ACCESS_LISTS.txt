@@ -1,0 +1,96 @@
+
+--- ANTI-SPOOFING ---
+
+
+F0/0 - in
+
+access-list 1 permit 172.17.168.0 0.0.0.127 - Backbone
+
+access-list 2 permit 172.17.173.0 0.0.0.31
+access-list 3 permit 172.17.171.192 0.0.0.63
+access-list 4 permit 172.17.169.0 0.0.0.127
+access-list 5 permit 172.17.173.64 0.0.0.15 
+access-list 6 permit 172.17.173.96 0.0.0.15 - Building 2
+
+access-list 13 permit 172.17.171.0 0.0.0.63
+access-list 14 permit 172.17.170.0 0.0.0.127
+access-list 15 permit 172.17.168.128 0.0.0.127
+access-list 16 permit 172.17.169.128 0.0.0.127
+access-list 17 permit 172.17.172.64 0.0.0.127 - Building 1
+
+access-list 18 permit 172.17.172.128 0.0.0.63
+access-list 19 permit 172.17.172.0 0.0.0.63 
+access-list 20 permit 172.17.171.64 0.0.0.63 
+access-list 21 permit 172.17.172.192 0.0.0.31 
+access-list 22 permit 172.17.173.32 0.0.0.31 - Building 3
+
+access-list 23 permit 172.17.172.224 0.0.0.31
+access-list 24 permit 172.17.171.128 0.0.0.63 
+access-list 25 permit 172.17.170.128 0.0.0.127
+access-list 26 permit 172.17.173.128 0.0.0.15
+access-list 27 permit 172.17.173.112 0.0.0.15 - Building 4
+
+ip access-group 13 in
+ip access-group 14 in
+ip access-group 15 in
+ip access-group 16 in
+ip access-group 17 in
+ip access-group 18 in
+ip access-group 19 in
+ip access-group 20 in
+ip access-group 21 in
+ip access-group 22 in
+ip access-group 23 in
+ip access-group 24 in
+ip access-group 25 in
+ip access-group 26 in
+ip access-group 27 in
+
+--------------------------
+
+F0/1 - in
+
+access-list 12 deny 172.17.168.0 0.0.0.127 - Backbone
+
+access-list 7 deny 172.17.173.0 0.0.0.31
+access-list 8 deny 172.17.171.192 0.0.0.63
+access-list 9 deny 172.17.169.0 0.0.0.127
+access-list 10 deny 172.17.173.64 0.0.0.15 
+access-list 11 deny 172.17.173.96 0.0.0.15  - Building 2	
+
+access-list 28 deny 172.17.173.0 0.0.0.31
+access-list 29 deny 172.17.171.192 0.0.0.63
+access-list 30 deny 172.17.169.0 0.0.0.127
+access-list 31 deny 172.17.173.64 0.0.0.15 
+access-list 32 deny 172.17.173.96 0.0.0.15 - Building 1
+
+access-list 33 deny 172.17.172.128 0.0.0.63
+access-list 34 deny 172.17.172.0 0.0.0.63 
+access-list 35 deny 172.17.171.64 0.0.0.63 
+access-list 36 deny 172.17.172.192 0.0.0.31 
+access-list 37 deny 172.17.173.32 0.0.0.31 - Building 3
+
+access-list 38 deny 172.17.172.224 0.0.0.31
+access-list 39 deny 172.17.171.128 0.0.0.63 
+access-list 40 deny 172.17.170.128 0.0.0.127
+access-list 41 deny 172.17.173.128 0.0.0.15
+access-list 42 deny 172.17.173.112 0.0.0.15 - Building 4
+
+ip access-group 28 in
+ip access-group 29 in
+ip access-group 30 in
+ip access-group 31 in
+ip access-group 32 in
+ip access-group 33 in
+ip access-group 34 in
+ip access-group 35 in
+ip access-group 36 in
+ip access-group 37 in
+ip access-group 38 in
+ip access-group 39 in
+ip access-group 40 in
+ip access-group 41 in
+ip access-group 42 in
+
+--------
+
