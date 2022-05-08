@@ -41,6 +41,7 @@ saved).**
 | 172.17.172.64  | 0.0.0.63         | 1           | 
 | 172.17.168.0   | 0.0.0.127        | 0           |
 
+One DNS domain is going to be established on each building.
 
 ### Building 2
 
