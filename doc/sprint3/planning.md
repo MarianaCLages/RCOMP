@@ -5,14 +5,16 @@ RCOMP 2021-2022 Project - Sprint 3 planning
 
 (This file is to be created/edited by the sprint master only)
 
+
 # 1. Sprint's backlog #
 
-| Task  | Task Description                                                                                                                                                                                                                                          |
-|-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| T.3.1 | Update the building1.pkt layer three Packet Tracer simulation from the previous sprint, to include the described features in this sprint for building 1                                                                                                   |
-| T.3.2 | Update the building2.pkt layer three Packet Tracer simulation from the previus sprint, to include the described features in this sprint for building 2. Final integration of each member's Packet Tracer simulation into a single simulation (campus.pkt) |
-| T.3.3 | Update the building3.pkt layer three Packet Tracer simulation from the previous sprint, to include the described features in this sprint for building 3                                                                                                   |
-| T.3.4 | Update the building4.pkt layer three Packet Tracer simulation from the previous sprint, to include the described features in this sprint for building 4                                                                                                   |
+| Task  | Task Description                                                                                                                                                                                                                                           |
+|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| T.3.1 | Update the building1.pkt layer three Packet Tracer simulation from the previous sprint, to include the described features in this sprint for building 1                                                                                                    |
+| T.3.2 | Update the building2.pkt layer three Packet Tracer simulation from the previous sprint, to include the described features in this sprint for building 2. Final integration of each member's Packet Tracer simulation into a single simulation (campus.pkt) |
+| T.3.3 | Update the building3.pkt layer three Packet Tracer simulation from the previous sprint, to include the described features in this sprint for building 3                                                                                                    |
+| T.3.4 | Update the building4.pkt layer three Packet Tracer simulation from the previous sprint, to include the described features in this sprint for building 4                                                                                                    |
+
 
 # 2. Technical decisions and coordination #
 
@@ -25,7 +27,8 @@ within the encompassed building. These configuration text files can be easily ex
 device’s window click the export button on the Running Config, or the Startup Config (if the Running Config has been
 saved).**
 
-##OSPF
+
+## 3. OSPF
 
 ## DNS Domain
 
@@ -39,14 +42,14 @@ DNS name for the remaining members: **building-X.rcomp-21-22-cc-gn**
 
 With **X** replaced by the digit that identifies the building (i.e., 2, 3, 4, and 5).
 
-### Notes:
+### *Notes:*
 
 Since we are a team of four members a DNS for the fifth building won't be developed.
 
-##VOIP
 
-###Building 1
+## 4. VoIP
 
+### Building 1
 
 | Ephone | Number    |
 |--------|-----------|
@@ -55,8 +58,7 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | 3      | 966555012 |
 | 4      | 966555013 | 
 
-###Building 2
-
+### Building 2
 
 | Ephone | Number    |
 |--------|-----------|
@@ -64,8 +66,7 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | 2      | 966555021 | 
 
 
-###Building 3
-
+### Building 3
 
 | Ephone | Number    |
 |--------|-----------|
@@ -73,8 +74,7 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | 2      | 966555031 | 
 
 
-###Building 4
-
+### Building 4
 
 | Ephone | Number    |
 |--------|-----------|
@@ -82,10 +82,9 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | 2      | 966555041 | 
 
 
-### DNS Database:
+## 5. DNS Database
 
-###Building 1
-
+### Building 1
 
 | Name                                 | Type     | Detail                               |
 |--------------------------------------|----------|--------------------------------------|
@@ -96,8 +95,8 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | web.building-1.rcomp-21-22-dj-g1     | CNAME    | server1.building-1.rcomp-21-22-dj-g1 | 
 | www.building-1.rcomp-21-22-dj-g1     | CNAME    | server1.building-1.rcomp-21-22-dj-g1 |
 
-###Building 2
 
+### Building 2
 
 | Name                                 | Type     | Detail                               |
 |--------------------------------------|----------|--------------------------------------|
@@ -108,8 +107,8 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | web.building-2.rcomp-21-22-dj-g1     | CNAME    | server1.building-2.rcomp-21-22-dj-g1 | 
 | www.building-2.rcomp-21-22-dj-g1     | CNAME    | server1.building-2.rcomp-21-22-dj-g1 |
 
-###Building 3
 
+### Building 3
 
 | Name                                 | Type     | Detail                               |
 |--------------------------------------|----------|--------------------------------------|
@@ -120,8 +119,8 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | web.building-3.rcomp-21-22-dj-g1     | CNAME    | server1.building-3.rcomp-21-22-dj-g1 | 
 | www.building-3.rcomp-21-22-dj-g1     | CNAME    | server1.building-3.rcomp-21-22-dj-g1 |
 
-###Building 4
 
+### Building 4
 
 | Name                                 | Type     | Detail                               |
 |--------------------------------------|----------|--------------------------------------|
@@ -133,71 +132,64 @@ Since we are a team of four members a DNS for the fifth building won't be develo
 | www.building-4.rcomp-21-22-dj-g1     | CNAME    | server1.building-4.rcomp-21-22-dj-g1 |
 
 
-## NAT
+## 6. NAT
 
-###Building 1
+### Building 1
 
-| Network-Adress | Network-Wildcard | Area  Number |
-|----------------|------------------|--------------|
-| 172.17.171.0   | 0.0.0.63         | 1            |
-| 172.17.170.0   | 0.0.0.127        | 1            | 
-| 172.17.168.128 | 0.0.0.127        | 1            |
-| 172.17.169.128 | 0.0.0.127        | 1            | 
-| 172.17.172.64  | .0.0.63          | 1            | 
-| 172.17.168.0   | 0.0.0.127        | 0            |
-
-
-
-###Building 2
-
-| Network-Adress | Network-Wildcard | Area  Number |
-|----------------|------------------|--------------|
-| 172.17.168.0   | 0.0.0.127        | 0            |
-| 172.17.173.0   | 0.0.0.31         | 2            | 
-| 172.17.171.192 | 0 0.0.0.63       | 2            |
-| 172.17.169.0   | 0.0.0.127        | 2            | 
-| 172.17.173.96  | 0.0.0.15         | 2            | 
-| 172.17.173.64  | 0.0.0.14         | 2            |
-
-###Building 3
-
-| Network-Adress | Network-Wildcard | Area  Number |
-|----------------|------------------|--------------|
-| 172.17.168.0   | 0.0.0.127        | 0            |
-| 172.17.172.128 | 0.0.0.63         | 3            | 
-| 172.17.172.0   | 0 0.0.0.63       | 3            |
-| 172.17.171.64  | 0.0.0.63         | 3            | 
-| 172.17.172.192 | 0.0.0.31         | 3            | 
-| 172.17.173.32  | 0.0.0.31         | 3            |
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.171.0   | 0.0.0.63         | 1           |
+| 172.17.170.0   | 0.0.0.127        | 1           | 
+| 172.17.168.128 | 0.0.0.127        | 1           |
+| 172.17.169.128 | 0.0.0.127        | 1           | 
+| 172.17.172.64  | 0.0.0.63         | 1           | 
+| 172.17.168.0   | 0.0.0.127        | 0           |
 
 
-###Building 4
+### Building 2
 
-| Network-Adress | Network-Wildcard | Area  Number |
-|----------------|------------------|--------------|
-| 172.17.172.224 | 0.0.0.31         | 4            |
-| 172.17.171.128 | 0.0.0.63         | 4            | 
-| 172.17.170.128 | 0.0.0.127        | 4            |
-| 172.17.173.128 | 0.0.0.15         | 4            | 
-| 172.17.173.112 | 0.0.0.15         | 4            | 
-| 172.17.168.0   | 0.0.0.127        | 0            |
-
-
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.168.0   | 0.0.0.127        | 0           |
+| 172.17.173.0   | 0.0.0.31         | 2           | 
+| 172.17.171.192 | 0 0.0.63         | 2           |
+| 172.17.169.0   | 0.0.0.127        | 2           | 
+| 172.17.173.96  | 0.0.0.15         | 2           | 
+| 172.17.173.64  | 0.0.0.14         | 2           |
 
 
+### Building 3
+
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.168.0   | 0.0.0.127        | 0           |
+| 172.17.172.128 | 0.0.0.63         | 3           | 
+| 172.17.172.0   | 0 0.0.63         | 3           |
+| 172.17.171.64  | 0.0.0.63         | 3           | 
+| 172.17.172.192 | 0.0.0.31         | 3           | 
+| 172.17.173.32  | 0.0.0.31         | 3           |
 
 
+### Building 4
 
-# 4. Subtasks assignment #
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.172.224 | 0.0.0.31         | 4           |
+| 172.17.171.128 | 0.0.0.63         | 4           | 
+| 172.17.170.128 | 0.0.0.127        | 4           |
+| 172.17.173.128 | 0.0.0.15         | 4           | 
+| 172.17.173.112 | 0.0.0.15         | 4           | 
+| 172.17.168.0   | 0.0.0.127        | 0           |
+
+
+# 7. Subtasks assignment #
 
 * **1200601** - Update the building3.pkt layer three Packet Tracer simulation from the previous sprint, to include the
-  described features in this sprint for **building three**.Final integration of each member's Packet Tracer simulation
-  into a single simulation (campus.pkt).
+  described features in this sprint for **building three**.
 * **1200902** - Update the building2.pkt layer three Packet Tracer simulation from the previus sprint, to include the
   described features in this sprint for **building two**. Final integration of each member's Packet Tracer simulation
   into a single simulation (campus.pkt).
 * **1200920** - Update the building1.pkt layer three Packet Tracer simulation from the previous sprint, to include the
-  described features in this sprint for **building one**
+  described features in this sprint for **building one**.
 * **1201487** - Update the building4.pkt layer three Packet Tracer simulation from the previous sprint, to include the
-  described features in this sprint for **building four**.Final integration of each member's Packet Tracer simulation
-  into a single simulation (campus.pkt).
+  described features in this sprint for **building four**.
