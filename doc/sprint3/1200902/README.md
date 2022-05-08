@@ -1,147 +1,65 @@
-RCOMP 2021-2022 Project - Sprint 2 - Member 1200902 folder
+RCOMP 2021-2022 Project - Sprint 2 - Member 1200601 folder
 ===========================================
 
-## ***Edifício 2***
+## ***Edifício 3***
 
-#### Durante a realização do Sprint 2 de RCOMP, foi desenvolvida, no 'Cisco Packet Tracer', uma simulação da rede anteriormente realizada no sprint 1, para cada edifício. Cada elemento teve de adaptar as suas VLANs, as quais se encontram definidas no planning, e os respetivos IPs (IPv4 Networks) com uma simulação funcional.
+#### Durante a realização do Sprint 1 de RCOMP, foi desenvolvida, no 'Cisco Packet Tracer', uma melhoria da rede anteriormente realizada no sprint 2, para o campus completo. Cada elemento teve de adaptar e atualizar os seus edifícios com novas informações.
 
-###
+### Ilustração do building 4 no Campus
 
-## *Simulação total do Campus*
+![BUILDING4](Building_2.PNG)
 
-![Campus](Backbone.png)
+## *DNS*
 
-### *ISP Connection*
+<br>
 
-![ISP_Connection](Backbone_ISP.png)
+Tabela, com os glue records do DNS:
 
-### *Building 1 Connection*
-
-![Building1](Backbone_building1.png)
-
-### *Building 2 Connection*
-
-![Building2](Backbone_building2.png)
-
-### *Building 3 Connection*
-
-![Building3](Backbone_building3.png)
-
-### *Building 4 Connection*
-
-![Building4](Backbone_building4.png)
+![DNS](Building_2_DNS.PNG)
 
 
-## *Simulação total do edifício*
+<br>
+<br>
 
-![B2_Total](Building2_Total.png)
+Tabela de DNS, com cada record especificado:
 
-### *Piso 0*
-
-![B2_GF](Building2_GroundFloor.png)
-
-### *Piso 1*
-
-![B2_FF](Building2_FirstFloor.png)
-
-
-### *Notas:*
-
-* Uma vez que não era necessário neste sprint, não foi configurado **DNS** utilizando um servidor próprio para tal.
-
-* Foi configurada uma DHCP Pool no router, chamada **"Wifi_B2"**, que está encarregue de atribuir enderenços **IPv4** a todos os dipositivos que se liguem de forma wireless à rede.
-
-* Os **VoIP phones** não foram configurados. Apenas se desligou as VLANs nas portas entre **switch** e **VoIP phone**.
-
-* Para uma melhor compreensão, foi anotado, debaixo dos end nodes, os seus respetivos endereços, exceto nos portáteis e telemóveis, visto que estes têm o **DHCP** ativado. Estão, também, descritas as informações relativas aos **switches**.
-
-* Todos os configs relacionados ao **router** e os vários **switches** encontram-se na pasta "config", por uma questão de melhor organização dos ficheiros.
+| Name                                 | Type     | Detail                               |
+|--------------------------------------|----------|--------------------------------------|
+| building-2.rcomp-21-22-dj-g1         | NS       | ns.building-2.rcomp-21-22-dj-g1      |
+| dns.building-2.rcomp-21-22-dj-g1     | CNAME    | ns.building-2.rcomp-21-22-dj-g1      | 
+| ns.building-2.rcomp-21-22-dj-g1      | A RECORD | 172.17.173.65                        |
+| server1.building-2.rcomp-21-22-dj-g1 | A RECORD | 172.17.173.66                        | 
+| web.building-2.rcomp-21-22-dj-g1     | CNAME    | server1.building-2.rcomp-21-22-dj-g1 | 
+| www.building-2.rcomp-21-22-dj-g1     | CNAME    | server1.building-2.rcomp-21-22-dj-g1 |
 
 
-### *Informação sobre o edifício:*
 
-- Backbone: 120 nodes
-- End user outlets on the ground floor: 25 nodes
-- End user outlets on floor one: 50 nodes
-- Wi-Fi network: 120 nodes
-- DMZ (Servers, administration workstations, and network infrastructure devices): 12 nodes
-- VoIP (IP-phones): 12 nodes
+##  VoIP
 
+### Building 2
 
-## Distribuição da rede
+| Ephone | Number    |
+|--------|-----------|
+| 1      | 966555020 |
+| 2      | 966555021 | 
 
-| VLAN NAME | VLAN ID | REQUESTED NODES | SUB NETWORK ADDRESS | MASK            | ADDRESS RANGE      | NETWORK ADDRESS | BROADCAST ADDRESS | FIRST VALID NODE ADDRESS | LAST VALID NODE ADDRESS |
-|-----------|---------|-----------------|---------------------|-----------------|--------------------|-----------------|-------------------|--------------------------|-------------------------|
-| BACKBONE  | 365     | 120             | 172.17.168.0        | 255.255.255.128 | 172.17.168.0-127   | 172.17.168.0    | 172.17.168.127    | 172.17.168.1             | 172.17.168.126          |
-| GF_B2     | 371     | 25              | 172.17.173.0        | 255.255.255.224 | 172.17.173.0-31    | 172.17.173.0    | 172.17.173.31     | 172.17.173.1             | 172.17.173.30           |
-| FF_B2     | 372     | 50              | 172.17.171.192      | 255.255.255.192 | 172.17.171.192-255 | 172.17.171.192  | 172.17.171.255    | 172.17.171.193           | 172.17.171.254          |
-| WIFI_B2   | 373     | 120             | 172.17.169.0        | 255.255.255.128 | 172.17.169.0-127   | 172.17.169.0    | 172.17.169.127    | 172.17.169.1             | 172.17.169.126          |
-| DMZ_B2    | 374     | 12              | 172.17.173.64       | 255.255.255.240 | 172.17.173.64-79   | 172.17.173.64   | 172.17.173.79     | 172.17.173.65            | 172.17.173.78           |
-| VoIP_B2   | 375     | 12              | 172.17.173.96       | 255.255.255.240 | 172.17.173.96-111  | 172.17.173.96   | 172.17.173.111    | 172.17.173.97            | 172.17.173.110          |
+## OSPF
+| Network-Adress | Network-Wildcard | Area Number |
+|----------------|------------------|-------------|
+| 172.17.168.0   | 0.0.0.127        | 0           |
+| 172.17.173.0   | 0.0.0.31         | 2           | 
+| 172.17.171.192 | 0 0.0.63         | 2           |
+| 172.17.169.0   | 0.0.0.127        | 2           | 
+| 172.17.173.96  | 0.0.0.15         | 2           | 
+| 172.17.173.64  | 0.0.0.14         | 2           |
 
+##NAT
 
-## Routing table
+###B2 Static NAT
+* ip nat inside source static tcp 172.17.173.66 53 15.203.48.66 53
+* ip nat inside source static udp 172.17.173.66 53 15.203.48.66 53
+* ip nat inside source static tcp 172.17.173.65 80 15.203.48.66 807
+* ip nat inside source static tcp 172.17.173.65 443 15.203.48.66 808
 
-### Router B2
-| Network        | Mask            | Next Hop       |
-|----------------|-----------------|----------------|
-| 0.0.0.0        | 0.0.0.0         | 172.17.168.1   |
+Como especificado no planning, o NAT para converter as redes locais para o ISP está feito no TOP_ROUTER.
 
-
-### TopRouter
-| Network        | Mask             | Next Hop     |
-|----------------|------------------|--------------|
-| 172.17.171.0   | 255.255.255.192  | 172.17.168.5 |
-| 172.17.170.0   | 255.255.255.128  | 172.17.168.5 |
-| 172.17.168.128 | 255.255.255.128  | 172.17.168.5 |
-| 172.17.169.128 | 255.255.255.128  | 172.17.168.5 |
-| 172.17.172.64  | 255.255.255.192  | 172.17.168.5 |
-| 172.17.173.0   | 255.255.255.224  | 172.17.168.2 |
-| 172.17.171.192 | 255.255.255.192  | 172.17.168.2 |
-| 172.17.169.0   | 255.255.255.128  | 172.17.168.2 |
-| 172.17.173.64  | 255.255.255.240  | 172.17.168.2 |
-| 172.17.173.96  | 255.255.255.240  | 172.17.168.2 |
-| 172.17.172.128 | 255.255.255.192  | 172.17.168.3 |
-| 172.17.172.0   | 255.255.255.192  | 172.17.168.3 |
-| 172.17.171.64  | 255.255.255.192  | 172.17.168.3 |
-| 172.17.172.192 | 255.255.255.224  | 172.17.168.3 |
-| 172.17.173.32  | 255.255.255.224  | 172.17.168.3 |
-| 172.17.172.224 | 255.255.255.224  | 172.17.168.3 |
-| 172.17.172.224 | 255.255.255.224  | 172.17.168.4 |
-| 172.17.171.128 | 255.255.255.192  | 172.17.168.4 |
-| 172.17.170.128 | 255.255.255.128  | 172.17.168.4 |
-| 172.17.173.128 | 255.255.255.240  | 172.17.168.4 |
-| 172.17.173.112 | 255.255.255.240  | 172.17.168.4 |
-| 0.0.0.0        | 0.0.0.0          | 15.203.48.66 |
-
-
-## Explicações e observações
-
-* O router apresenta um default route, conseguido através do endereço **0.0.0.0/0**, assim, este redireciona, quando tráfego relativo a **IPs desconhecidos**, para o **Top Router**.
-
-
-* A simulação permite a comunicação entre **VLANs** (utilizando **Default Gateways**). Cada **router** encaminha qualquer endereço que não conhece para o **router** presente no MC e este encaminha para cada edifício, caso este esteja compreeendido entre os endereços do **campus**. No caso de não estar, dá forward para o **ISP** através de um **DSL Modem** (sendo esta solução representada apenas no ficheiro campus.pkt, localizado na pasta relativa ao Edifício 1).
-
-
-* Todas as ligações entre switches foram alteradas para se apresentarem em **trunk mode**, o **VTP domain** foi alterado para o domínio fornecido no enunciado (**rc22djg1**) e o switch do MC foi configurado para estar em **modo server**, sendo os restantes switches configurados para estarem no **modo client**. Assim, permitimos que todos os **switches tenham todas as VLANs na sua VLAN database** configuradas para o edifício e campus (VLAN IDs no **intervalo de 365 – 395** e descritas no ficheiro planning.md).
-
-
-* Na configuração deste edifício, podemos verificar tanto o IC, bem como os dois HCs e os quatro CPs, estão representados por switches **"PT-Empty"**, tal como mencionado no enunciado.
-
-
-* O modelo do router utilizado foi o *2811*, tal como mencionado no enunciado do projeto.
-
-
-* Por outro lado, conectados aos APs, estão laptops e smartphones preparados e ligados através de WiFi à VLAN referente à WiFi Network do Edifício 4 (VLAN ID: 383).
-
-
-* SSIDs e canais foram configurados nos Access Points (também representados nas imagens).
-
-
-* Tal como mencionado previamente, o DHCP foi configurado numa Pool "Wifi_B2" permitindo, assim, a atribuição automática de enderenços IPv4 a todos os end nodes que tenham o DCHP ligado.
-
-
-* A **árvore dos endereços** e a sua respetiva legenda encontram-se, em formato **jpg**, na pasta de cada elemento do grupo.
-
-
-* A **simulação de rede do campus** encontra-se na pasta do sprint master (1200902) e do elemento que está encarregue do edifício 1 (1200920).

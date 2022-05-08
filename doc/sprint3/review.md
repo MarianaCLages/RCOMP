@@ -26,20 +26,48 @@ The subtask backlog accomplishment can be assessed as one of:
 For the last three cases, a text description of what has not been implemented and present issues must be added.
 Unimplemented features and issues solving is assigned to the same member on the next sprint.
 
-(Examples)
+
 
 ### 2.1. 1200920 - Development of OSPF,HTTP,DHCP,VoIP service,DNS,NAT and ACL. #
-* ACL not implemmented.
-
+* All ICMP echo requests and echo replies are always allowed. **- not implemmented**
+* All traffic to the DMZ is to be blocked, except for the DNS service
+and HTTP/HTTPS services to the corresponding servers. All traffic
+incomming from the DMZ is allowed. **- not implemmented**
+* All traffic directed to the router itself (with destination IPV4 node
+address belonging to the router) is to be blocked, except for the traffic
+required for the current to work **- not implemmented**
+* Remaning traffic, except for the traffic required for the current
+features to work **- not implemmented.**
 
 ### 2.2. 1200902 - Development of OSPF,HTTP,DHCP,VoIP service,DNS,NAT and ACL.
-* ACL not implemmented.
-
+* All ICMP echo requests and echo replies are always allowed. **- not implemmented**
+* All traffic to the DMZ is to be blocked, except for the DNS service
+  and HTTP/HTTPS services to the corresponding servers. All traffic
+  incomming from the DMZ is allowed. **- not implemmented**
+* All traffic directed to the router itself (with destination IPV4 node
+  address belonging to the router) is to be blocked, except for the traffic
+  required for the current to work **- not implemmented**
+* Remaning traffic, except for the traffic required for the current
+  features to work **- not implemmented.**
 
 ### 2.3. 1200601 - Development of OSPF,HTTP,DHCP,VoIP service,DNS,NAT and ACL.
-* ACL not implemmented.
-
+* All ICMP echo requests and echo replies are always allowed. **- not implemmented**
+* All traffic to the DMZ is to be blocked, except for the DNS service
+  and HTTP/HTTPS services to the corresponding servers. All traffic
+  incomming from the DMZ is allowed. **- not implemmented**
+* All traffic directed to the router itself (with destination IPV4 node
+  address belonging to the router) is to be blocked, except for the traffic
+  required for the current to work **- not implemmented**
+* Remaning traffic, except for the traffic required for the current
+  features to work **- not implemmented.**
 
 ### 2.4. 1201487 - Development of OSPF,HTTP,DHCP,VoIP service,DNS,NAT and ACL.
-* ACL not implemmented.
-
+* All ICMP echo requests and echo replies are always allowed. **- not implemmented**
+* All traffic to the DMZ is to be blocked, except for the DNS service
+  and HTTP/HTTPS services to the corresponding servers. All traffic
+  incomming from the DMZ is allowed. **- not implemmented**
+* All traffic directed to the router itself (with destination IPV4 node
+  address belonging to the router) is to be blocked, except for the traffic
+  required for the current to work **- not implemmented**
+* Remaning traffic, except for the traffic required for the current
+  features to work **- not implemmented.**
